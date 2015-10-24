@@ -31,8 +31,11 @@ public class BingSearch {
 		  return bingSearch(queryTermsStr, site);
 	  }
 		
+	  public static long bingSearch(Query q) throws EncoderException, JSONException{
+		  return bingSearch(q.getQuery(),q.getSite());
+	  }
 	  
-	  public static long  bingSearch(String queryTermStr, String site) throws EncoderException, JSONException{
+	  public static long  bingSearch(String query, String site) throws EncoderException, JSONException{
 		
 		String bingUrl="https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?$top=10&$format=json";
 		
@@ -46,7 +49,7 @@ public class BingSearch {
 		try {
 		
 			//Query=%27site%3afifa.com%20premiership%27
-			url = new URL(bingUrl+"&Query=%27"+"site%3a"+site+"%20"+urlCoder.encode(queryTermsStr)+"%27");
+			url = new URL(bingUrl+"&Query=%27"+"site%3a"+site+"%20"+urlCoder.encode(query)+"%27");
 		} catch (MalformedURLException e) {
 			
 			e.printStackTrace();
@@ -81,7 +84,7 @@ public class BingSearch {
 		//System.out.println("content "+content);
 		JSONObject jsonObj = new JSONObject(content);
 	    JSONArray resultArray = jsonObj.getJSONObject("d").getJSONArray("results");
-	    System.out.println("jsonarray:"+resultArray);
+	    //System.out.println("jsonarray:"+resultArray);
 	    
 	    JSONObject result=resultArray.getJSONObject(0);
 	    System.out.println("result:"+result);
@@ -90,7 +93,7 @@ public class BingSearch {
 	    //put into local hashmap
 	    Query q=new Query(queryTermsStr,site);
 	    WebDatabaseClassification.queryCacheDoc.put(q,result);
-	    WebDatabaseClassification.queryCacheCount.put(q,(int)num);
+	    WebDatabaseClassification.queryCacheCount.put(q,num);
 	    
 	    return num;
 		
