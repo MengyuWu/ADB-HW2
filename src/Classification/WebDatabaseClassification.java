@@ -131,7 +131,9 @@ public class WebDatabaseClassification {
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
 		// TODO Auto-generated method stub
 		
-		String site="health.com";
+		//String site="health.com";
+		//String site="yahoo.com";
+		String site="fifa.com";
 		double tc=100;
 		double ts=0.6;
 		
