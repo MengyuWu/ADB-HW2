@@ -87,7 +87,7 @@ public class BingSearch {
 	    //System.out.println("jsonarray:"+resultArray);
 	    
 	    JSONObject result=resultArray.getJSONObject(0);
-	    System.out.println("result:"+result);
+	    //System.out.println("result:"+result);
 	    long num=getWebTotal(result);
 	    
 	    //put into local hashmap

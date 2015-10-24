@@ -7,7 +7,7 @@ import org.apache.commons.codec.EncoderException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import util.QueryRead;
+import util.QueryHelper;
 import util.BingSearch;
 import entity.Category;
 import entity.Query;
@@ -29,10 +29,10 @@ public class WebDatabaseClassification {
 	
 	static{
 		try {
-			QueryRead.readQueriesOfCategory(rootQueries, "root");
-			QueryRead.readQueriesOfCategory(computerQueries, "computers");
-			QueryRead.readQueriesOfCategory(healthQuereis, "health");
-			QueryRead.readQueriesOfCategory(sportsQuereis, "sports");
+			QueryHelper.readQueriesOfCategory(rootQueries, "root");
+			QueryHelper.readQueriesOfCategory(computerQueries, "computers");
+			QueryHelper.readQueriesOfCategory(healthQuereis, "health");
+			QueryHelper.readQueriesOfCategory(sportsQuereis, "sports");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,14 +58,33 @@ public class WebDatabaseClassification {
 		HashMap<String, Long> ECoverage=C.getECoverage();
 		HashMap<String, Double> ESpecificity=C.getESpecificity();
 		ArrayList<Category> subSet=C.getSubCategories();
+		
+		//base case
+		if(subSet.size()==0){
+			return mainCategory;
+		}
+		
 		long total=0;
 		for(Category c:subSet){
 			ArrayList<String> queryList=queryMap.get(c.getCategory());
-			//TODO: have "AND" list and "AND NOT"list(to ignore docs that have been included in the previous query)
+			//TODO: have "AND" list and "AND NOT"list(to ignore docs that have been included in the previous query);
+			// look at http://vlaurie.com/computers2/Articles/bing_advanced_search.htm
 			long count=0;
+			String NOTList="";
 			for(String query:queryList){
+				
+				//Doesn't influence much
+				String andQuery=QueryHelper.queryAND(query);
+				String notQuery="("+QueryHelper.queryAND(NOTList)+")";
+				String q=andQuery;
+				if(!NOTList.isEmpty()){
+					q=q+" AND NOT "+notQuery;
+				}
+		
 				count+=getCount(query, site);
-				System.out.println("query:"+ query+" count:"+count);
+				//System.out.println("query:"+ q +" count:"+count);
+				NOTList+=query+" ";
+				
 			}
 			String sub=c.getCategory();
 			total+=count;
@@ -75,9 +94,18 @@ public class WebDatabaseClassification {
 		for(Category c:subSet){
 			String sub=c.getCategory();
 			long coverage=ECoverage.get(sub);
-			double specificity=(double)coverage/total;
+			double specificity=(double)ESparent*coverage/total;
 			ESpecificity.put(sub,specificity );
 			System.out.println("subCategory:"+sub+" coverage:"+coverage+" specificity:"+specificity);
+			
+			if(coverage>=tc && specificity>=ts){
+				result+=mainCategory+"/"+classify(c,site, tc,ts, specificity);
+			}
+		
+		}
+		
+		if(result.isEmpty()){
+			return mainCategory;
 		}
 		
 		
@@ -103,8 +131,8 @@ public class WebDatabaseClassification {
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
 		// TODO Auto-generated method stub
 		
-		String database="fifa.com";
-		double tc=200;
+		String site="health.com";
+		double tc=100;
 		double ts=0.6;
 		
 		//Create Category hierarchy 
@@ -131,8 +159,8 @@ public class WebDatabaseClassification {
 		root.addSubCategory(health);
 		root.addSubCategory(sports);
 	
-		classify(root, "health.com", 100, 0.6,1);
-	
+		String category=classify(root,site, tc,ts,1);
+		System.out.println(site+" "+category);
 	
 	}
 	

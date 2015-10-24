@@ -7,7 +7,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class QueryRead {
+public class QueryHelper {
+	
+	
+	public static String queryAND(String queries){
+		String res=queries.replace(" "," AND ");
+		return res;		
+	}
 	
 	//Read query terms for parent category
 	public static void readQueriesOfCategory(HashMap<String,ArrayList<String>> hm, String category) throws IOException{
