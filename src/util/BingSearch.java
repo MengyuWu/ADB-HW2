@@ -7,6 +7,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.binary.Base64;
@@ -17,6 +18,7 @@ import org.json.JSONObject;
 
 import entity.Query;
 import Classification.WebDatabaseClassification;
+import Classification.getWordsLynx;
 
 
 public class BingSearch {
@@ -37,7 +39,7 @@ public class BingSearch {
 	  
 	  public static long  bingSearch(String query, String site) throws EncoderException, JSONException{
 		
-		String bingUrl="https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?$top=10&$format=json";
+		String bingUrl="https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?$top=4&$format=json";
 		
 		byte[] accountKeyBytes = Base64.encodeBase64((ACCOUNT_KEY+ ":" +ACCOUNT_KEY).getBytes());
 		String accountKeyEnc = new String(accountKeyBytes);
@@ -95,8 +97,41 @@ public class BingSearch {
 	    WebDatabaseClassification.queryCacheDoc.put(q,result);
 	    WebDatabaseClassification.queryCacheCount.put(q,num);
 	    
+	    contentSummary(result);
+	    
 	    return num;
 		
+	  }
+	  
+	  public static void contentSummary(JSONObject obj){
+		  JSONArray webs;
+		try {
+			webs = obj.getJSONArray("Web");
+			for(int i=0; i<webs.length(); i++){
+		    	 JSONObject o=webs.getJSONObject(i);
+		    	 String url=o.getString("Url");
+		    	 System.out.println(i+"url"+url);
+		    	 //only contains the url is not contained before
+		    	 if(!WebDatabaseClassification.samples.contains(url)){
+		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url);
+		    		 for(String w:set){
+		    			 if(WebDatabaseClassification.summary.containsKey(w)){
+		    				 long count=WebDatabaseClassification.summary.get(w);
+		    				 WebDatabaseClassification.summary.put(w,count+1);
+		    			 }else{
+		    				 WebDatabaseClassification.summary.put(w,(long)1);
+		    			 }
+		    		 }
+		    	 }
+		    	 
+		    	 System.out.println("words count:"+WebDatabaseClassification.summary.size());
+		     }
+			
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		     
 	  }
 	  
 	  public static long getWebTotal(JSONObject obj) throws JSONException{

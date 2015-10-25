@@ -2,6 +2,10 @@ package Classification;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import org.apache.commons.codec.EncoderException;
 import org.json.JSONException;
@@ -26,6 +30,8 @@ public class WebDatabaseClassification {
 	public static HashMap<Query, JSONObject> queryCacheDoc=new HashMap<Query, JSONObject>();
 	public static HashMap<Query, Long> queryCacheCount=new HashMap<Query, Long>();
 	
+	public static TreeSet<String> samples=new TreeSet<String>();
+	public static TreeMap<String,Long> summary=new TreeMap<String,Long>();
 	
 	static{
 		try {
@@ -91,6 +97,14 @@ public class WebDatabaseClassification {
 			ECoverage.put(sub, count);
 		}
 		
+		//the content summary for mainCategory has been done
+		String filename=mainCategory+"-"+site+".txt";
+		System.out.println("output:"+filename);
+		outputSummary(summary, filename);
+		//clean up for next level summary
+		samples.clear();
+		summary.clear();
+		
 		for(Category c:subSet){
 			String sub=c.getCategory();
 			long coverage=ECoverage.get(sub);
@@ -113,6 +127,14 @@ public class WebDatabaseClassification {
 		
 	}
 	
+	public static void outputSummary(TreeMap<String, Long> map, String filename ){
+		System.out.println("map"+map);
+		Set<Map.Entry<String,Long>> entries=map.entrySet();
+		for(Map.Entry<String,Long> entry:entries){
+			System.out.println("term:"+entry.getKey()+" frequency:"+entry.getValue());
+		}
+	}
+	
 	public static HashMap<String, ArrayList<String>> getQueryMap(String category){
 		if(category.equals("Root")){
 			return rootQueries;
@@ -132,8 +154,8 @@ public class WebDatabaseClassification {
 		// TODO Auto-generated method stub
 		
 		//String site="health.com";
-		//String site="yahoo.com";
-		String site="fifa.com";
+		String site="yahoo.com";
+		//String site="fifa.com";
 		double tc=100;
 		double ts=0.6;
 		
