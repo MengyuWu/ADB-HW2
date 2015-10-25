@@ -111,8 +111,10 @@ public class BingSearch {
 		    	 JSONObject o=webs.getJSONObject(i);
 		    	 String url=o.getString("Url");
 		    	 System.out.println("Getting page: "+url);
+		    	 //TODO: put all the url to a hashmap, to do test 
 		    	 //only contains the url is not contained before
 		    	 if(!WebDatabaseClassification.samples.contains(url)){
+		    		 WebDatabaseClassification.samples.add(url);
 		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url);
 		    		 for(String w:set){
 		    			 if(WebDatabaseClassification.summary.containsKey(w)){

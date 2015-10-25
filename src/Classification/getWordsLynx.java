@@ -17,6 +17,7 @@ public class getWordsLynx {
         try {
         	
             //String cmdline[] = {"/usr/bin/lynx", "--dump", url };
+        	//TODO: change back to above command when doing test in clic
         	String cmdline[] = {"/opt/local/bin/lynx", "--dump", url };
             Process p = Runtime.getRuntime().exec(cmdline);
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));

@@ -180,8 +180,10 @@ public class WebDatabaseClassification {
 		// TODO Auto-generated method stub
 		
 		//String site="health.com";
-		String site="yahoo.com";
+		//String site="yahoo.com";
 		//String site="fifa.com";
+		//String site="diabetes.org";
+		String site="hardwarecentral.com";
 		double tc=100;
 		double ts=0.6;
 		
