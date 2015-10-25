@@ -1,8 +1,13 @@
 package Classification;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -87,7 +92,9 @@ public class WebDatabaseClassification {
 					q=q+" AND NOT "+notQuery;
 				}
 		
-				count+=getCount(query, site);
+				//count+=getCount(q, site);
+				//using  a And b AND NOT(c) not very good
+ 				count+=getCount(query, site);
 				//System.out.println("query:"+ q +" count:"+count);
 				NOTList+=query+" ";
 				
@@ -100,7 +107,15 @@ public class WebDatabaseClassification {
 		//the content summary for mainCategory has been done
 		String filename=mainCategory+"-"+site+".txt";
 		System.out.println("output:"+filename);
-		outputSummary(summary, filename);
+		try {
+			outputSummary(summary, filename);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//clean up for next level summary
 		samples.clear();
 		summary.clear();
@@ -127,12 +142,23 @@ public class WebDatabaseClassification {
 		
 	}
 	
-	public static void outputSummary(TreeMap<String, Long> map, String filename ){
-		System.out.println("map"+map);
+	public static void outputSummary(TreeMap<String, Long> map, String filename ) throws FileNotFoundException, IOException{
+		Properties properties = new Properties(){
+			@Override
+		    public synchronized Enumeration<Object> keys() {
+		        return Collections.enumeration(new TreeSet<Object>(super.keySet()));
+		    }
+		};
+//		properties.putAll(map);
+//		properties.store(new FileOutputStream(filename),null);
+		
+		//System.out.println("map"+map);
 		Set<Map.Entry<String,Long>> entries=map.entrySet();
 		for(Map.Entry<String,Long> entry:entries){
-			System.out.println("term:"+entry.getKey()+" frequency:"+entry.getValue());
+			properties.put(entry.getKey(), entry.getValue().toString());
+			//System.out.println("term:"+entry.getKey()+" frequency:"+entry.getValue());
 		}
+		properties.store(new FileOutputStream(filename), null);
 	}
 	
 	public static HashMap<String, ArrayList<String>> getQueryMap(String category){

@@ -110,7 +110,7 @@ public class BingSearch {
 			for(int i=0; i<webs.length(); i++){
 		    	 JSONObject o=webs.getJSONObject(i);
 		    	 String url=o.getString("Url");
-		    	 System.out.println(i+"url"+url);
+		    	 System.out.println("Getting page: "+url);
 		    	 //only contains the url is not contained before
 		    	 if(!WebDatabaseClassification.samples.contains(url)){
 		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url);
