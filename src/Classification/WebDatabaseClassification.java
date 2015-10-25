@@ -177,7 +177,13 @@ public class WebDatabaseClassification {
 	}
 	
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
-		// TODO Auto-generated method stub
+		// TODO arg verification
+		
+		if(args.length<4){
+			System.out.println("Please follow the format: accountKey t_es t_ec host");
+			System.exit(0);
+		}
+		
 		
 		//String site="health.com";
 		//String site="yahoo.com";
@@ -186,6 +192,12 @@ public class WebDatabaseClassification {
 		String site="hardwarecentral.com";
 		double tc=100;
 		double ts=0.6;
+		
+		BingSearch.ACCOUNT_KEY=args[0];
+		ts=Double.parseDouble(args[1]);
+		tc=Double.parseDouble(args[2]);
+		site=args[3];
+		
 		
 		//Create Category hierarchy 
 		Category hardware=new Category("Hardware");

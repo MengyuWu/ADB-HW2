@@ -23,7 +23,7 @@ import Classification.getWordsLynx;
 
 public class BingSearch {
 	//Provide your account key here. 
-	   static String ACCOUNT_KEY="pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0";
+	 public static String ACCOUNT_KEY="pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0";
 		
 	  public static String queryTermsStr="premiership";
 	  public static String site="fifa.com";
