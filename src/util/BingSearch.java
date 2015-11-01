@@ -22,14 +22,13 @@ import Classification.getWordsLynx;
 
 
 public class BingSearch {
-	//Provide your account key here. 
-	 public static String ACCOUNT_KEY="pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0";
+	 //Provide your account key here. 
+	 public static String ACCOUNT_KEY="L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw";
 		
 	  public static String queryTermsStr="premiership";
 	  public static String site="fifa.com";
 	  
 	  public static long binSearch() throws EncoderException, JSONException{
-
 		  return bingSearch(queryTermsStr, site);
 	  }
 		
@@ -49,7 +48,6 @@ public class BingSearch {
 		URL url=null;
 		// %27(')
 		try {
-		
 			//Query=%27site%3afifa.com%20premiership%27
 			url = new URL(bingUrl+"&Query=%27"+"site%3a"+site+"%20"+urlCoder.encode(query)+"%27");
 		} catch (MalformedURLException e) {

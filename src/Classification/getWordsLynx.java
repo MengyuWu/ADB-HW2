@@ -8,9 +8,7 @@ import java.util.StringTokenizer;
 import java.util.TreeSet;
 
 public class getWordsLynx {
-
     public static Set runLynx(String url) {
-
         int buffersize = 40000;
         StringBuffer buffer = new StringBuffer(buffersize);
 

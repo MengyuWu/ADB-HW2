@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Category {
   String category="";
 
-  ArrayList<Category> subCategories;
+  ArrayList<Category> subCategories; // a list of the subcategories for this Category
   HashMap<String, Long> ECoverage; //ECoverage(D,C): <EC(D,C1),EC(D,C2)>
   HashMap<String, Double> ESpecificity; //ESpecificity(D,C):
 
@@ -15,7 +15,6 @@ public class Category {
 		this.subCategories=new ArrayList<Category>();
 		this.ECoverage=new HashMap<String, Long> ();
 		this.ESpecificity=new HashMap<String, Double>();
-		
 	}
 	
 	public void addSubCategory(Category c){

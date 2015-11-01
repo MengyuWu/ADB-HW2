@@ -38,14 +38,13 @@ public class WebDatabaseClassification {
 	public static TreeSet<String> samples=new TreeSet<String>();
 	public static TreeMap<String,Long> summary=new TreeMap<String,Long>();
 	
-	static{
+	static{ // Build the hash maps
 		try {
 			QueryHelper.readQueriesOfCategory(rootQueries, "root");
 			QueryHelper.readQueriesOfCategory(computerQueries, "computers");
 			QueryHelper.readQueriesOfCategory(healthQuereis, "health");
 			QueryHelper.readQueriesOfCategory(sportsQuereis, "sports");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -55,23 +54,23 @@ public class WebDatabaseClassification {
 		if(queryCacheCount.containsKey(q)){
 			return queryCacheCount.get(q);
 		}
-		
 		return BingSearch.bingSearch(q);
-		
 	}
 	
 	
 	public static String classify(Category C, String site, double tc, double ts, double ESparent) throws EncoderException, JSONException{
 		String result="";
-		//for all subset Ci of C, calculate  ECoverage(D,ci) and ESpecificity(D,ci)
+		//for all subset Ci of C, calculate ECoverage(D,ci) and ESpecificity(D,ci)
 		String mainCategory=C.getCategory();
 		HashMap<String, ArrayList<String>> queryMap=getQueryMap(mainCategory);
+		System.out.println("QUERY MAP: " + queryMap + " for category: " + mainCategory);
 		HashMap<String, Long> ECoverage=C.getECoverage();
 		HashMap<String, Double> ESpecificity=C.getESpecificity();
 		ArrayList<Category> subSet=C.getSubCategories();
 		
-		//base case
+		//base case, there are no subcategories
 		if(subSet.size()==0){
+			System.out.println("MAIN CATEGORY: " + mainCategory);
 			return mainCategory;
 		}
 		
@@ -110,10 +109,8 @@ public class WebDatabaseClassification {
 		try {
 			outputSummary(summary, filename);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		//clean up for next level summary
@@ -149,14 +146,10 @@ public class WebDatabaseClassification {
 		        return Collections.enumeration(new TreeSet<Object>(super.keySet()));
 		    }
 		};
-//		properties.putAll(map);
-//		properties.store(new FileOutputStream(filename),null);
-		
-		//System.out.println("map"+map);
+
 		Set<Map.Entry<String,Long>> entries=map.entrySet();
 		for(Map.Entry<String,Long> entry:entries){
 			properties.put(entry.getKey(), entry.getValue().toString());
-			//System.out.println("term:"+entry.getKey()+" frequency:"+entry.getValue());
 		}
 		properties.store(new FileOutputStream(filename), null);
 	}
@@ -173,7 +166,6 @@ public class WebDatabaseClassification {
 		}else{
 			return null;
 		}
-		
 	}
 	
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
@@ -231,10 +223,6 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 	
 		String category=classify(root,site, tc,ts,1);
-		System.out.println(site+" "+category);
-	
+		System.out.println(site+" "+category); // Final output
 	}
-	
-	
-
 }

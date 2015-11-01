@@ -15,7 +15,7 @@ public class QueryHelper {
 		return res;		
 	}
 	
-	//Read query terms for parent category
+	//Read query terms for parent category from the provided .txt files and add the terms to the appropriate hash map
 	public static void readQueriesOfCategory(HashMap<String,ArrayList<String>> hm, String category) throws IOException{
 		String path="queries/"+category+".txt";
 		try {
@@ -23,13 +23,10 @@ public class QueryHelper {
 			String line = br.readLine();
 			StringBuilder sb = new StringBuilder();
 		    
-		    while (line != null) {
-		    	//System.out.println(line);
-		    	
+		    while (line != null) {		    	
 		    	String key=line.substring(0,line.indexOf(' ')); // category
 		    	String queries=line.substring(line.indexOf(' ')+1); // queries
 		    	
-		    	//System.out.println(key+" :"+queries);
 		    	if(hm.containsKey(key)){
 		    		hm.get(key).add(queries);
 		    	}else{
@@ -41,7 +38,6 @@ public class QueryHelper {
 		        
 		    }
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
