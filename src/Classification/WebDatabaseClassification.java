@@ -177,27 +177,34 @@ public class WebDatabaseClassification {
 	}
 	
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
-		// TODO arg verification
-		
+		// Error checking for command-line arguments
 		if(args.length<4){
 			System.out.println("Please follow the format: accountKey t_es t_ec host");
 			System.exit(0);
 		}
-		
-		
-		//String site="health.com";
-		//String site="yahoo.com";
-		//String site="fifa.com";
-		//String site="diabetes.org";
+
 		String site="hardwarecentral.com";
-		double tc=100;
 		double ts=0.6;
+		double tc=100;
+
+		try {
+			ts=Double.parseDouble(args[1]);
+			tc=Double.parseDouble(args[2]);
+		} catch (NumberFormatException e) {
+			System.out.println("t_es and t_ec should be doubles");
+			System.exit(0);
+		} // We restriced t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
+		if (ts >= 1 || ts < 0) {
+			System.out.println("t_es should be between 0 and 1");
+			System.exit(0);
+		} 
+		if (tc < 1) {
+			System.out.println("t_ec should be 1 or greater");
+			System.exit(0);
+		}
 		
 		BingSearch.ACCOUNT_KEY=args[0];
-		ts=Double.parseDouble(args[1]);
-		tc=Double.parseDouble(args[2]);
 		site=args[3];
-		
 		
 		//Create Category hierarchy 
 		Category hardware=new Category("Hardware");
