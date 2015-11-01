@@ -23,7 +23,7 @@ To Run:
 		1) In Build.xml, update the following two lines to reflect the
 		version of Java that you are using:
 		 	<property name="target" value="1.6"/>
-    	 	<property name="source" value="1.6"/>
+    	 		<property name="source" value="1.6"/>
     	 2) In Build.xml, if fork="yes" in the line below, change fork="no"
     	 	<java classname="main.bingRun" failonerror="true" fork="no">
 	3) ant WebDatabaseClassification -Dargs='<Bing_Account_Key> <t_es> <t_ec> <host>'
