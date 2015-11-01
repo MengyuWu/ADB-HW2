@@ -57,46 +57,42 @@ public class WebDatabaseClassification {
 		return BingSearch.bingSearch(q);
 	}
 	
-	
 	public static String classify(Category C, String site, double tc, double ts, double ESparent) throws EncoderException, JSONException{
 		String result="";
 		//for all subset Ci of C, calculate ECoverage(D,ci) and ESpecificity(D,ci)
 		String mainCategory=C.getCategory();
 		HashMap<String, ArrayList<String>> queryMap=getQueryMap(mainCategory);
-		System.out.println("QUERY MAP: " + queryMap + " for category: " + mainCategory);
 		HashMap<String, Long> ECoverage=C.getECoverage();
 		HashMap<String, Double> ESpecificity=C.getESpecificity();
 		ArrayList<Category> subSet=C.getSubCategories();
 		
-		//base case, there are no subcategories
+		//base case, there are no subcategories, return this category
 		if(subSet.size()==0){
-			System.out.println("MAIN CATEGORY: " + mainCategory);
 			return mainCategory;
 		}
 		
 		long total=0;
-		for(Category c:subSet){
+		for(Category c:subSet){ // go through each of the category's subcategories
 			ArrayList<String> queryList=queryMap.get(c.getCategory());
-			//TODO: have "AND" list and "AND NOT"list(to ignore docs that have been included in the previous query);
+			// have "AND" list and "AND NOT" list (to ignore docs that have been included in the previous query)
 			// look at http://vlaurie.com/computers2/Articles/bing_advanced_search.htm
 			long count=0;
 			String NOTList="";
 			for(String query:queryList){
-				
 				//Doesn't influence much
 				String andQuery=QueryHelper.queryAND(query);
+				System.out.println("AND QUERY: " + andQuery);
 				String notQuery="("+QueryHelper.queryAND(NOTList)+")";
+				System.out.println("NOT QUERY: " + notQuery);
 				String q=andQuery;
 				if(!NOTList.isEmpty()){
 					q=q+" AND NOT "+notQuery;
 				}
 		
-				//count+=getCount(q, site);
-				//using  a And b AND NOT(c) not very good
+				//using a And b AND NOT(c) not very good
  				count+=getCount(query, site);
 				//System.out.println("query:"+ q +" count:"+count);
-				NOTList+=query+" ";
-				
+				NOTList+=query+" ";	
 			}
 			String sub=c.getCategory();
 			total+=count;
@@ -129,14 +125,10 @@ public class WebDatabaseClassification {
 			}
 		
 		}
-		
 		if(result.isEmpty()){
 			return mainCategory;
 		}
-		
-		
 		return result;
-		
 	}
 	
 	public static void outputSummary(TreeMap<String, Long> map, String filename ) throws FileNotFoundException, IOException{
@@ -154,6 +146,7 @@ public class WebDatabaseClassification {
 		properties.store(new FileOutputStream(filename), null);
 	}
 	
+	// Get the appropriate query map for the category
 	public static HashMap<String, ArrayList<String>> getQueryMap(String category){
 		if(category.equals("Root")){
 			return rootQueries;
