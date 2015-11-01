@@ -193,7 +193,7 @@ public class WebDatabaseClassification {
 		} catch (NumberFormatException e) {
 			System.out.println("t_es and t_ec should be doubles");
 			System.exit(0);
-		} // We restriced t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
+		} // We restricted t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
 		if (ts >= 1 || ts <= 0) {
 			System.out.println("t_es should be between 0 and 1");
 			System.exit(0);

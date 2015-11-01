@@ -40,3 +40,4 @@ To Run:
 L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
 
 6) Any additional information that you consider significant 
+We restricted t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
