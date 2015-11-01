@@ -36,8 +36,8 @@
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target name="getWordsLynx">
-        <java classname="Classification.getWordsLynx" failonerror="true" fork="no">
+    <target name="WebDatabaseClassification">
+        <java classname="Classification.WebDatabaseClassification" failonerror="true" fork="no">
             <arg line="${args}"/>
             <classpath refid="ADB-HW2.classpath"/>
         </java>
