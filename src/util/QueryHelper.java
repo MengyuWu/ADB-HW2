@@ -9,7 +9,6 @@ import java.util.HashMap;
 
 public class QueryHelper {
 	
-	
 	public static String queryAND(String queries){
 		String res=queries.replace(" "," AND ");
 		return res;		

@@ -49,14 +49,17 @@ public class WebDatabaseClassification {
 		}
 	}
 	
+	// Query using the Bing API, return number of search results (get previous searches from the cache)
 	public static long getCount(String query, String site) throws EncoderException, JSONException{
 		Query q=new Query(query,site);
 		if(queryCacheCount.containsKey(q)){
+			print "Existing search: " + queryCacheCount.get(q)
 			return queryCacheCount.get(q);
 		}
 		return BingSearch.bingSearch(q);
 	}
 	
+	// Carries out the algorithm in Fig. 4 of the QProber paper and constructs content summaries
 	public static String classify(Category C, String site, double tc, double ts, double ESparent) throws EncoderException, JSONException{
 		String result="";
 		//for all subset Ci of C, calculate ECoverage(D,ci) and ESpecificity(D,ci)
@@ -79,7 +82,7 @@ public class WebDatabaseClassification {
 			long count=0;
 			String NOTList="";
 			for(String query:queryList){
-				//Doesn't influence much
+				//Exclude the queries that have already been done, doesn't influence much
 				String andQuery=QueryHelper.queryAND(query);
 				System.out.println("AND QUERY: " + andQuery);
 				String notQuery="("+QueryHelper.queryAND(NOTList)+")";
@@ -96,7 +99,7 @@ public class WebDatabaseClassification {
 			}
 			String sub=c.getCategory();
 			total+=count;
-			ECoverage.put(sub, count);
+			ECoverage.put(sub, count); // Record coverage in the DB for this category
 		}
 		
 		//the content summary for mainCategory has been done
@@ -117,15 +120,16 @@ public class WebDatabaseClassification {
 			String sub=c.getCategory();
 			long coverage=ECoverage.get(sub);
 			double specificity=(double)ESparent*coverage/total;
-			ESpecificity.put(sub,specificity );
+			ESpecificity.put(sub,specificity);
 			System.out.println("subCategory:"+sub+" coverage:"+coverage+" specificity:"+specificity);
 			
+			// If coverage, specificity criteria met, go one level deeper
 			if(coverage>=tc && specificity>=ts){
 				result+=mainCategory+"/"+classify(c,site, tc,ts, specificity);
 			}
 		
 		}
-		if(result.isEmpty()){
+		if(result.isEmpty()){ // Cannot classify more specifically than this category 
 			return mainCategory;
 		}
 		return result;

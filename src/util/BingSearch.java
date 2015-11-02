@@ -37,7 +37,6 @@ public class BingSearch {
 	  }
 	  
 	  public static long  bingSearch(String query, String site) throws EncoderException, JSONException{
-		
 		String bingUrl="https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?$top=4&$format=json";
 		
 		byte[] accountKeyBytes = Base64.encodeBase64((ACCOUNT_KEY+ ":" +ACCOUNT_KEY).getBytes());
@@ -45,60 +44,57 @@ public class BingSearch {
 
 		URLCodec urlCoder=new URLCodec();
 		
+		// Form the URL
 		URL url=null;
 		// %27(')
 		try {
 			//Query=%27site%3afifa.com%20premiership%27
 			url = new URL(bingUrl+"&Query=%27"+"site%3a"+site+"%20"+urlCoder.encode(query)+"%27");
 		} catch (MalformedURLException e) {
-			
 			e.printStackTrace();
 		}
-		
+
+		// Create connection object
 		URLConnection urlConnection=null;
 		try {
 			urlConnection = url.openConnection();
 		} catch (IOException e) {
-			
 			e.printStackTrace();
 		}
-		urlConnection.setRequestProperty("Authorization", "Basic " + accountKeyEnc);
-				
+		urlConnection.setRequestProperty("Authorization", "Basic " + accountKeyEnc); // modify general request props
+			
+		// Now that connection has been established, retrieve the contents from the remote object 	
 		InputStream inputStream=null;
 		try {
 			inputStream = (InputStream) urlConnection.getContent();
 		} catch (IOException e) {
-		
 			e.printStackTrace();
 		}		
 		
-		
+		// Read the data from the input stream
 		byte[] contentRaw = new byte[urlConnection.getContentLength()];
 		try {
 			inputStream.read(contentRaw);
 		} catch (IOException e) {
-		
 			e.printStackTrace();
 		}
 		String content = new String(contentRaw);
-		//System.out.println("content "+content);
+
+		// Create a JSON object, extract JSONArray objects
 		JSONObject jsonObj = new JSONObject(content);
 	    JSONArray resultArray = jsonObj.getJSONObject("d").getJSONArray("results");
-	    //System.out.println("jsonarray:"+resultArray);
 	    
 	    JSONObject result=resultArray.getJSONObject(0);
-	    //System.out.println("result:"+result);
 	    long num=getWebTotal(result);
 	    
-	    //put into local hashmap
+	    // put into local hashmap
 	    Query q=new Query(queryTermsStr,site);
-	    WebDatabaseClassification.queryCacheDoc.put(q,result);
-	    WebDatabaseClassification.queryCacheCount.put(q,num);
+	    WebDatabaseClassification.queryCacheDoc.put(q,result); // cache query result
+	    WebDatabaseClassification.queryCacheCount.put(q,num); // how many results for this query
 	    
 	    contentSummary(result);
 	    
 	    return num;
-		
 	  }
 	  
 	  public static void contentSummary(JSONObject obj){
@@ -128,16 +124,15 @@ public class BingSearch {
 		     }
 			
 		} catch (JSONException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		     
 	  }
 	  
+	  // Obtain the number of search results
 	  public static long getWebTotal(JSONObject obj) throws JSONException{
 		  String webTotalStr=obj.getString("WebTotal").toString();
 		  long webTotal=Long.parseLong(webTotalStr);
-		  //System.out.println("webTotal:"+webTotal);
 		  return webTotal;
 	  }
 	  
