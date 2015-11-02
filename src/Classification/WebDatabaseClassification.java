@@ -136,6 +136,7 @@ public class WebDatabaseClassification {
 		return result;
 	}
 	
+	// store the content summary (in word=count format) into the appropriate text file
 	public static void outputSummary(TreeMap<String, Long> map, String filename ) throws FileNotFoundException, IOException{
 		Properties properties = new Properties(){
 			@Override

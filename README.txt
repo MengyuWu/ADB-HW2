@@ -89,11 +89,25 @@ the content summaries).
 Part II is done in the same function that performs the algorithm in Part I 
 (classify method in WebDatabaseClassification class). After calculating the
 coverage for Ci, the classify method calls the output summmary method, 
+which outputs the content summary of the database into a text file.
+
+The summary (stored in a TreeMap) is created for each category node C that 
+is visited while classifying database D. For each query q associated with 
+the category C, the BingSearch class queries Bing for the top 4 webpages 
+for this query, where each query is a page in database D. The samples
+TreeSet contains the URLs 
+
+The summary is constructed in the BingSearch class, which goes through the
+top 4 web results for a probe, extracts the set of words in the result docs,
+and takes a count of each word in the word set. The contentSummary class
+will ignore any duplicate URLs in these top 4 web results.
+
+The content summary 
 
 The samples and summary are cleared after outputting the summary in
 preparation for the next category level.
 
-For each category a database is classified under (not including level 2
+For each category, a database is classified under (not including level 2
 categories), a content summary is created and output to a text file titled
 Category-siteName.txt, where the contents of the file is based on all docs
 retrived by same-level queries plus all the docs retrieved by ,,,,,,

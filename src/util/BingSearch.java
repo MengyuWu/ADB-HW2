@@ -97,21 +97,20 @@ public class BingSearch {
 	    return num;
 	  }
 	  
+	  // summarize the content of the web results for this query
 	  public static void contentSummary(JSONObject obj){
 		  JSONArray webs;
-		try {
+		try { // go through the web results
 			webs = obj.getJSONArray("Web");
-			System.out.println("WEBS: " + webs);
 			for(int i=0; i<webs.length(); i++){
 		    	 JSONObject o=webs.getJSONObject(i);
-		    	 String url=o.getString("Url");
+		    	 String url=o.getString("Url"); // get the URL of the site
 		    	 System.out.println("Getting page: "+url);
-		    	 //TODO: put all the url to a hashmap, to do test 
-		    	 //only contains the url is not contained before
+		    	 // only add URLs that haven't already been seen
 		    	 if(!WebDatabaseClassification.samples.contains(url)){
 		    		 WebDatabaseClassification.samples.add(url);
-		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url);
-		    		 for(String w:set){
+		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
+		    		 for(String w:set){ // take a count of each word in the set
 		    			 if(WebDatabaseClassification.summary.containsKey(w)){
 		    				 long count=WebDatabaseClassification.summary.get(w);
 		    				 WebDatabaseClassification.summary.put(w,count+1);
@@ -123,6 +122,7 @@ public class BingSearch {
 		    	 
 		    	 System.out.println("words count:"+WebDatabaseClassification.summary.size());
 		     }
+		     System.out.println("SAMPLES: " + samples);
 			
 		} catch (JSONException e) {
 			e.printStackTrace();
