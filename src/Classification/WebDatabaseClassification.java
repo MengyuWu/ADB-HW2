@@ -32,7 +32,10 @@ public class WebDatabaseClassification {
 	static HashMap<String, ArrayList<String>> healthQuereis=new HashMap<String, ArrayList<String>>();
 	static HashMap<String, ArrayList<String>> sportsQuereis=new HashMap<String, ArrayList<String>>();
 
+	// store query results
 	public static HashMap<Query, JSONObject> queryCacheDoc=new HashMap<Query, JSONObject>();
+
+	// store number of search results returned by queries
 	public static HashMap<Query, Long> queryCacheCount=new HashMap<Query, Long>();
 	
 	public static TreeSet<String> samples=new TreeSet<String>();
@@ -53,7 +56,6 @@ public class WebDatabaseClassification {
 	public static long getCount(String query, String site) throws EncoderException, JSONException{
 		Query q=new Query(query,site);
 		if(queryCacheCount.containsKey(q)){
-			System.out.println("Existing search: " + queryCacheCount.get(q));
 			return queryCacheCount.get(q);
 		}
 		return BingSearch.bingSearch(q);
@@ -84,9 +86,9 @@ public class WebDatabaseClassification {
 			for(String query:queryList){
 				//Exclude the queries that have already been done, doesn't influence much
 				String andQuery=QueryHelper.queryAND(query);
-				System.out.println("AND QUERY: " + andQuery);
+				//System.out.println("AND QUERY: " + andQuery);
 				String notQuery="("+QueryHelper.queryAND(NOTList)+")";
-				System.out.println("NOT QUERY: " + notQuery);
+				//System.out.println("NOT QUERY: " + notQuery);
 				String q=andQuery;
 				if(!NOTList.isEmpty()){
 					q=q+" AND NOT "+notQuery;

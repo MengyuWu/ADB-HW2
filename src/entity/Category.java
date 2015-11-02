@@ -30,10 +30,12 @@ public class Category {
 	}
 
 	public HashMap<String, Long> getECoverage() {
+		System.out.println("ECOVERAGE: " + ECoverage);
 		return ECoverage;
 	}
 
 	public HashMap<String, Double> getESpecificity() {
+		System.out.println("ESPECIFICITY: " + ESpecificity);
 		return ESpecificity;
 	}
 

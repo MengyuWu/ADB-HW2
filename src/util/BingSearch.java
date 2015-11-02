@@ -129,7 +129,7 @@ public class BingSearch {
 		     
 	  }
 	  
-	  // Obtain the number of search results
+	  // Obtain the number of search results obtained from querying this database
 	  public static long getWebTotal(JSONObject obj) throws JSONException{
 		  String webTotalStr=obj.getString("WebTotal").toString();
 		  long webTotal=Long.parseLong(webTotalStr);
