@@ -42,15 +42,18 @@ Part I:
 		util/BingSearch.java
 		util/QueryHelper.java
 
-	WebDatabaseClassification class's main method does command-line argument checking, 
-	prepares the category hierarchy, then calls the classify method which returns the
-	site's categorization. The classify method implements the query-probing classification
-	algorithm described in Figure 4 of the QProber paper. It is a recursive method that 
-	runs until it either hits a leaf node (a category that doesn't have any subcategories),
-	or the database fails to meet the user-specified coverage and specificity thresholds 
-	for the current category. WebDatabaseClassification class calls QueryHelper class's
-	readQueriesOfCategory method to add the query terms found in the provided .txt files
-	(computers.txt, health.txt, root.txt, and sports.txt) into the appropriate hash map.
+	WebDatabaseClassification class's main method does command-line
+	argument checking, prepares the category hierarchy, then calls 
+	the classify method which returns the site's categorization. 
+	The classify method implements the query-probing classification
+	algorithm described in Figure 4 of the QProber paper. It is a
+	recursive method that runs until it either hits a leaf node 
+	(a category that doesn't have any subcategories), or the 
+	database fails to meet the user-specified coverage and specificity
+	thresholds for the current category. WebDatabaseClassification 
+	class calls QueryHelper class's readQueriesOfCategory method to
+	add the query terms found in the provided .txt files (computers.txt,
+	health.txt, root.txt, and sports.txt) into the appropriate hash map.
 	Each hash map corresponds to a non-leaf category.
 
 	In the classify method (WebDatabaseClassification class), a for loop is executed that iterates through all of
