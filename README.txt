@@ -76,6 +76,33 @@ The Category and Query classes are necessary because we need the concept of
 Categories and Queries in order to execute this algorithm.
 
 Part II uses the following Java files:
+	Classification/WebDatabaseClassification.java
+	Classification/getWordsLynx.java
+	entity/Category.java
+	entity/Query.java
+	util/BingSearch.java
+	util/QueryHelper.java
+
+We chose option b for this part (not including multiple-word information in
+the content summaries).
+
+Part II is done in the same function that performs the algorithm in Part I 
+(classify method in WebDatabaseClassification class). After calculating the
+coverage for Ci, the classify method calls the output summmary method, 
+
+The samples and summary are cleared after outputting the summary in
+preparation for the next category level.
+
+For each category a database is classified under (not including level 2
+categories), a content summary is created and output to a text file titled
+Category-siteName.txt, where the contents of the file is based on all docs
+retrived by same-level queries plus all the docs retrieved by ,,,,,,
+
+Classification/getWordsLynx.java is almost identical to the one included in
+the assignment instructions, and the functionality is identical to what was
+specified in the instructions - it converts an HTML doc to lowercase, treats
+any character not in the English alphabet as a word separator, and returns the
+set of words that appear in the document.
 
 5) Your Bing account key (so we can test your project)
 L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw

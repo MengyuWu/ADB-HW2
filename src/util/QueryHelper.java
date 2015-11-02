@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class QueryHelper {
-	
+	// Prepares the query strings for database probing
 	public static String queryAND(String queries){
 		String res=queries.replace(" "," AND ");
 		return res;		

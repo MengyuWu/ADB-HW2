@@ -101,6 +101,7 @@ public class BingSearch {
 		  JSONArray webs;
 		try {
 			webs = obj.getJSONArray("Web");
+			System.out.println("WEBS: " + webs);
 			for(int i=0; i<webs.length(); i++){
 		    	 JSONObject o=webs.getJSONObject(i);
 		    	 String url=o.getString("Url");
