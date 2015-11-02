@@ -129,7 +129,6 @@ public class WebDatabaseClassification {
 			if(coverage>=tc && specificity>=ts){
 				result+=mainCategory+"/"+classify(c,site, tc,ts, specificity);
 			}
-		
 		}
 		if(result.isEmpty()){ // Cannot classify more specifically than this category 
 			return mainCategory;
