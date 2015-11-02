@@ -94,23 +94,23 @@ which outputs the content summary of the database into a text file.
 The summary (stored in a TreeMap) is created for each category node C that 
 is visited while classifying database D. For each query q associated with 
 the category C, the BingSearch class queries Bing for the top 4 webpages 
-for this query, where each query is a page in database D. The samples
-TreeSet contains the URLs 
+for this query, where each query is a page in database D. 
 
-The summary is constructed in the BingSearch class, which goes through the
-top 4 web results for a probe, extracts the set of words in the result docs,
-and takes a count of each word in the word set. The contentSummary class
-will ignore any duplicate URLs in these top 4 web results.
+The summary is added to in the BingSearch class's contentSummary method, 
+which goes through the top 4 web results for a probe, extracts the set 
+of words in the result docs, and takes a count of each word in the word set. 
+The samples set will only accept new URLs, hence duplicate URLs for a 
+category will be ignored.
 
-The content summary 
+For each category a database is classified under (not including level 2
+categories), a content summary is created and output to a text file titled
+Category-siteName.txt, where each line of the file contains a word in the 
+document sample for the category and its document frequency (the count 
+stored in the summary TreeMap), or number of docs in the sample that contain
+that word. Additionally, the specifications in Part 2b) are met by .....
 
 The samples and summary are cleared after outputting the summary in
 preparation for the next category level.
-
-For each category, a database is classified under (not including level 2
-categories), a content summary is created and output to a text file titled
-Category-siteName.txt, where the contents of the file is based on all docs
-retrived by same-level queries plus all the docs retrieved by ,,,,,,
 
 Classification/getWordsLynx.java is almost identical to the one included in
 the assignment instructions, and the functionality is identical to what was

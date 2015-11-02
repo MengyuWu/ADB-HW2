@@ -105,7 +105,6 @@ public class BingSearch {
 			for(int i=0; i<webs.length(); i++){
 		    	 JSONObject o=webs.getJSONObject(i);
 		    	 String url=o.getString("Url"); // get the URL of the site
-		    	 System.out.println("Getting page: "+url);
 		    	 // only add URLs that haven't already been seen
 		    	 if(!WebDatabaseClassification.samples.contains(url)){
 		    		 WebDatabaseClassification.samples.add(url);
@@ -121,9 +120,7 @@ public class BingSearch {
 		    	 }
 		    	 
 		    	 System.out.println("words count:"+WebDatabaseClassification.summary.size());
-		     }
-		     System.out.println("SAMPLES: " + samples);
-			
+		     }			
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
