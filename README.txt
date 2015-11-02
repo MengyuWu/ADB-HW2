@@ -75,6 +75,8 @@ any subcategories of any category, then the classification will be only Root.
 The Category and Query classes are necessary because we need the concept of
 Categories and Queries in order to execute this algorithm.
 
+//TODO: talk about NOT queries here or try running w/o them
+
 Part II uses the following Java files:
 	Classification/WebDatabaseClassification.java
 	Classification/getWordsLynx.java
@@ -123,5 +125,3 @@ L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
 
 6) Any additional information that you consider significant 
 We restricted t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
-
-TODO: try running w/o the NOT queries
