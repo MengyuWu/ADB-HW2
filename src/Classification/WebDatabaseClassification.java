@@ -53,7 +53,7 @@ public class WebDatabaseClassification {
 	public static long getCount(String query, String site) throws EncoderException, JSONException{
 		Query q=new Query(query,site);
 		if(queryCacheCount.containsKey(q)){
-			print "Existing search: " + queryCacheCount.get(q)
+			System.out.println("Existing search: " + queryCacheCount.get(q));
 			return queryCacheCount.get(q);
 		}
 		return BingSearch.bingSearch(q);
