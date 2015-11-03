@@ -46,7 +46,7 @@ public class WebDatabaseClassification {
 	public static TreeSet<String> healthSample=new TreeSet<String>();
 	public static TreeMap<String,Long> healthSummary=new TreeMap<String,Long>();
 	public static TreeSet<String> sportsSample=new TreeSet<String>();
-	public static TreeSet<String> sportsSummary=new TreeSet<String>();
+	public static TreeMap<String,Long> sportsSummary=new TreeMap<String, Long>();
 	
 	static{ // Build the hash maps
 		try {
@@ -130,7 +130,7 @@ public class WebDatabaseClassification {
 				}
 		
 				//using a And b AND NOT(c) not very good
- 				count+=getCount(query, site, c);
+ 				count+=getCount(query, site, c.getCategory());
 				//System.out.println("query:"+ q +" count:"+count);
 				NOTList+=query+" ";	
 			}
@@ -160,17 +160,6 @@ public class WebDatabaseClassification {
 			// If coverage, specificity criteria met, go one level deeper
 			if(coverage>=tc && specificity>=ts){
 				result+=mainCategory+"/"+classify(c,site, tc,ts, specificity);
-		
-				//the content summary for mainCategory has been done
-				String filename=mainCategory+"-"+site+".txt";
-				System.out.println("output:"+filename);
-				try {
-					outputSummary(summary, filename);
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
 			}
 		}
 		if(result.isEmpty()){ // Cannot classify more specifically than this category 

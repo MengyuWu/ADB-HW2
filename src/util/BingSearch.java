@@ -28,8 +28,8 @@ public class BingSearch {
 	  public static String queryTermsStr="premiership";
 	  public static String site="fifa.com";
 	  
-	  public static long binSearch() throws EncoderException, JSONException{
-		  return bingSearch(queryTermsStr, site);
+	  public static long binSearch(String category) throws EncoderException, JSONException{
+		  return bingSearch(queryTermsStr, site, category);
 	  }
 		
 	  public static long bingSearch(Query q, String category) throws EncoderException, JSONException{
