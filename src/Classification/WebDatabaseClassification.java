@@ -264,6 +264,31 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 	
 		String category=classify(root,site, tc,ts,1);
+		String[] categories = category.split("/");
+		for (int i = 0; i < categories.length; i++) {
+			String currentCategory = categories[i];
+			String filename = "";
+			String mainCategory = "";
+			if (currentCategory.equals("Root")) {
+				mainCategory += "Root";
+			} else if (currentCategory.equals("Computers")) {
+				mainCategory += "Computers";
+			} else if (currentCategory.equals("Health")) {
+				mainCategory += "Health";
+			} else if (currentCategory.equals("Sports")) {
+				mainCategory += "Sports";
+			} else {
+				continue; // ignore the leaf nodes
+			}
+			filename += mainCategory+"-"+site+".txt";
+			try {
+				outputSummary(getSummary(mainCategory), filename); // output the summary to the text file
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 		System.out.println(site+" "+category); // Final output
 	}
 }
