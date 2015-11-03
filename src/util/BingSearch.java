@@ -105,7 +105,8 @@ public class BingSearch {
 			for(int i=0; i<webs.length(); i++){
 		    	 JSONObject o=webs.getJSONObject(i);
 		    	 String url=o.getString("Url"); // get the URL of the site
-		    	 // only add URLs that haven't already been seen
+		    	 System.out.println("Getting page: "+url);
+				 // only add URLs that haven't already been seen
 		    	 if(!WebDatabaseClassification.samples.contains(url)){
 		    		 WebDatabaseClassification.samples.add(url);
 		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc

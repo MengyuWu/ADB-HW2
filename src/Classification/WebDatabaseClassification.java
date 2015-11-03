@@ -104,19 +104,6 @@ public class WebDatabaseClassification {
 			ECoverage.put(sub, count); // Record coverage in the DB for this category
 		}
 
-		//the content summary for mainCategory has been done
-		String filename=mainCategory+"-"+site+".txt";
-		System.out.println("output:"+filename);
-		try {
-			outputSummary(summary, filename);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		//clean up for next level summary
-		samples.clear();
-		summary.clear();
 
 		// Have to see where each one is outputted
 		
@@ -136,6 +123,21 @@ public class WebDatabaseClassification {
 			return mainCategory;
 		}
 
+		//the content summary for mainCategory has been done
+		String filename=mainCategory+"-"+site+".txt";
+		System.out.println("output:"+filename);
+		try {
+			outputSummary(summary, filename);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//clean up for next level summary
+		//samples.clear();
+		//System.out.println("CLEARED");
+		//summary.clear();
+		
 		return result;
 	}
 	
