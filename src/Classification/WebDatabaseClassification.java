@@ -117,22 +117,23 @@ public class WebDatabaseClassification {
 			// If coverage, specificity criteria met, go one level deeper
 			if(coverage>=tc && specificity>=ts){
 				result+=mainCategory+"/"+classify(c,site, tc,ts, specificity);
+		
+				//the content summary for mainCategory has been done
+				String filename=mainCategory+"-"+site+".txt";
+				System.out.println("output:"+filename);
+				try {
+					outputSummary(summary, filename);
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		if(result.isEmpty()){ // Cannot classify more specifically than this category 
 			return mainCategory;
 		}
 
-		//the content summary for mainCategory has been done
-		String filename=mainCategory+"-"+site+".txt";
-		System.out.println("output:"+filename);
-		try {
-			outputSummary(summary, filename);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 		//clean up for next level summary
 		//samples.clear();
 		//System.out.println("CLEARED");
