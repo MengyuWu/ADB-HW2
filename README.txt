@@ -88,21 +88,32 @@ Part II uses the following Java files:
 We chose option b for this part (not including multiple-word information in
 the content summaries).
 
-Part of Part II is done in the same function that performs the algorithm in Part I 
-(classify method in WebDatabaseClassification class). After calculating the
-coverage for Ci, the classify method calls the output summmary method, 
-which outputs the content summary of the database into a text file.
+For Part II, we prepared a TreeSet (for sample) and TreeMap (for summary)
+for each of the non-leaf categories. When the getCount method is called in the
+classify method, the parent category is passed as a parameter to the BingSearch
+class. In the contentSummary method, called at the end of the main bingSearch
+method, any unique URLs (that haven't yet been returned in any of the query 
+probes for the current subcategory) are added to the parent category's TreeSet
+/sample, while any unique words (that haven't yet been seen in any of the query
+probes for the current subcategory) are added to the parent category's 
+TreeMap/summary. 
 
-The summary (stored in a TreeMap) is created for each category node C that 
-is visited while classifying database D. For each query q associated with 
-the category C, the BingSearch class queries Bing for the top 4 webpages 
-for this query, where each query is a page in database D. 
+The summary is created for each category node C that is visited while 
+classifying database D. For each query q associated with the category C, 
+the BingSearch class queries Bing for the top 4 webpages for this query, 
+where each query is a page in database D. The contentSummary method will only
+go through the top 4 (or the unique sites within the top 4) results 
+returned from Bing for any given probe.
 
-The summary is added to in the BingSearch class's contentSummary method, 
-which goes through the top 4 web results for a probe, extracts the set 
-of words in the result docs, and takes a count of each word in the word set. 
-The samples set will only accept new URLs, hence duplicate URLs for a 
-category will be ignored.
+Using Classification/getWordsLynx.java, it extracts the set of words in the
+result docs, and takes a count of each word in the word set. The samples set
+will only accept new URLs, hence duplicate URLs for a category will be ignored.
+
+Classification/getWordsLynx.java is almost identical to the one included in
+the assignment instructions, and the functionality is identical to what was
+specified in the instructions - it converts an HTML doc to lowercase, treats
+any character not in the English alphabet as a word separator, and returns the
+set of words that appear in the document.
 
 For each category a database is classified under (not including level 2
 categories), a content summary is created and output to a text file titled
@@ -110,15 +121,6 @@ Category-siteName.txt, where each line of the file contains a word in the
 document sample for the category and its document frequency (the count 
 stored in the summary TreeMap), or number of docs in the sample that contain
 that word. Additionally, the specifications in Part 2b) are met by .....
-
-The samples and summary are cleared after outputting the summary in
-preparation for the next category level.
-
-Classification/getWordsLynx.java is almost identical to the one included in
-the assignment instructions, and the functionality is identical to what was
-specified in the instructions - it converts an HTML doc to lowercase, treats
-any character not in the English alphabet as a word separator, and returns the
-set of words that appear in the document.
 
 5) Your Bing account key (so we can test your project)
 L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
