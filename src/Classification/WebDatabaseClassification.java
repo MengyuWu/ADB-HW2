@@ -38,8 +38,15 @@ public class WebDatabaseClassification {
 	// store number of search results returned by queries
 	public static HashMap<Query, Long> queryCacheCount=new HashMap<Query, Long>();
 	
-	public static TreeSet<String> samples=new TreeSet<String>();
-	public static TreeMap<String,Long> summary=new TreeMap<String,Long>();
+	// have a summary and sample for each non-leaf category
+	public static TreeSet<String> rootSample=new TreeSet<String>();
+	public static TreeMap<String,Long> rootSummary=new TreeMap<String,Long>();
+	public static TreeSet<String> computerSample=new TreeSet<String>();
+	public static TreeMap<String,Long> computerSummary=new TreeMap<String,Long>();
+	public static TreeSet<String> healthSample=new TreeSet<String>();
+	public static TreeMap<String,Long> healthSummary=new TreeMap<String,Long>();
+	public static TreeSet<String> sportsSample=new TreeSet<String>();
+	public static TreeSet<String> sportsSummary=new TreeSet<String>();
 	
 	static{ // Build the hash maps
 		try {
@@ -51,14 +58,42 @@ public class WebDatabaseClassification {
 			e.printStackTrace();
 		}
 	}
+
+	public static TreeSet<String> getSample(String category) {
+		if (category.equals("Root")) {
+			return rootSample;
+		} else if (category.equals("Computers")) {
+			return computerSample;
+		} else if (category.equals("Health")) {
+			return healthSample;
+		} else if (category.equals("Sports")) {
+			return sportsSample;
+		} else {
+			return null;
+		}
+	}
+
+	public static TreeMap<String,Long> getSummary(String category) {
+		if (category.equals("Root")) {
+			return rootSummary;
+		} else if (category.equals("Computers")) {
+			return computerSummary;
+		} else if (category.equals("Health")) {
+			return healthSummary;
+		} else if (category.equals("Sports")) {
+			return sportsSummary;
+		} else {
+			return null;
+		}
+	}
 	
 	// Query using the Bing API, return number of search results (get previous searches from the cache)
-	public static long getCount(String query, String site) throws EncoderException, JSONException{
+	public static long getCount(String query, String site, String category) throws EncoderException, JSONException{
 		Query q=new Query(query,site);
 		if(queryCacheCount.containsKey(q)){
 			return queryCacheCount.get(q);
 		}
-		return BingSearch.bingSearch(q);
+		return BingSearch.bingSearch(q, category);
 	}
 	
 	// Carries out the algorithm in Fig. 4 of the QProber paper and constructs content summaries
@@ -95,7 +130,7 @@ public class WebDatabaseClassification {
 				}
 		
 				//using a And b AND NOT(c) not very good
- 				count+=getCount(query, site);
+ 				count+=getCount(query, site, c);
 				//System.out.println("query:"+ q +" count:"+count);
 				NOTList+=query+" ";	
 			}
@@ -104,8 +139,16 @@ public class WebDatabaseClassification {
 			ECoverage.put(sub, count); // Record coverage in the DB for this category
 		}
 
-
-		// Have to see where each one is outputted
+		//the content summary for mainCategory has been done
+		/*String filename=mainCategory+"-"+site+".txt";
+		System.out.println("output:"+filename);
+		try {
+			outputSummary(summary, filename); // output after the recursion******
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}*/
 		
 		for(Category c:subSet){
 			String sub=c.getCategory();
@@ -123,16 +166,6 @@ public class WebDatabaseClassification {
 			return mainCategory;
 		}
 
-		//the content summary for mainCategory has been done
-		String filename=mainCategory+"-"+site+".txt";
-		System.out.println("output:"+filename);
-		try {
-			outputSummary(summary, filename);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 		//clean up for next level summary
 		//samples.clear();
 		//System.out.println("CLEARED");

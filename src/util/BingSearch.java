@@ -32,11 +32,11 @@ public class BingSearch {
 		  return bingSearch(queryTermsStr, site);
 	  }
 		
-	  public static long bingSearch(Query q) throws EncoderException, JSONException{
-		  return bingSearch(q.getQuery(),q.getSite());
+	  public static long bingSearch(Query q, String category) throws EncoderException, JSONException{
+		  return bingSearch(q.getQuery(),q.getSite(),category);
 	  }
 	  
-	  public static long  bingSearch(String query, String site) throws EncoderException, JSONException{
+	  public static long  bingSearch(String query, String site, String category) throws EncoderException, JSONException{
 		String bingUrl="https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?$top=4&$format=json";
 		
 		byte[] accountKeyBytes = Base64.encodeBase64((ACCOUNT_KEY+ ":" +ACCOUNT_KEY).getBytes());
@@ -92,13 +92,14 @@ public class BingSearch {
 	    WebDatabaseClassification.queryCacheDoc.put(q,result); // cache query result
 	    WebDatabaseClassification.queryCacheCount.put(q,num); // how many results for this query
 	    
-	    contentSummary(result);
+	    contentSummary(result, category); // this is static , need to pass in the category
 	    
 	    return num;
 	  }
 	  
 	  // summarize the content of the web results for this query
-	  public static void contentSummary(JSONObject obj){
+	  public static void contentSummary(JSONObject obj, String category){
+	  	System.out.println("CATEGORY: " + category);
 		  JSONArray webs;
 		try { // go through the web results
 			webs = obj.getJSONArray("Web");
@@ -107,7 +108,7 @@ public class BingSearch {
 		    	 String url=o.getString("Url"); // get the URL of the site
 		    	 System.out.println("Getting page: "+url);
 				 // only add URLs that haven't already been seen
-		    	 if(!WebDatabaseClassification.samples.contains(url)){
+		    	/* if(!WebDatabaseClassification.samples.contains(url)){ // do not make this global, pass in hash map
 		    		 WebDatabaseClassification.samples.add(url);
 		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
 		    		 for(String w:set){ // take a count of each word in the set
@@ -120,7 +121,7 @@ public class BingSearch {
 		    		 }
 		    	 }
 		    	 
-		    	 System.out.println("words count:"+WebDatabaseClassification.summary.size());
+		    	 System.out.println("words count:"+WebDatabaseClassification.summary.size());*/
 		     }			
 		} catch (JSONException e) {
 			e.printStackTrace();
