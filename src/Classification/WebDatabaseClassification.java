@@ -115,8 +115,8 @@ public class WebDatabaseClassification {
 			e.printStackTrace();
 		}
 		//clean up for next level summary
-		samples.clear();
-		summary.clear();
+		//samples.clear();
+		//summary.clear();
 		
 		for(Category c:subSet){
 			String sub=c.getCategory();
