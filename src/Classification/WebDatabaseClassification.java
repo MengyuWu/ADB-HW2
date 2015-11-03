@@ -104,20 +104,6 @@ public class WebDatabaseClassification {
 			ECoverage.put(sub, count); // Record coverage in the DB for this category
 		}
 		
-		//the content summary for mainCategory has been done
-		String filename=mainCategory+"-"+site+".txt";
-		System.out.println("output:"+filename);
-		try {
-			outputSummary(summary, filename);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		//clean up for next level summary
-		//samples.clear();
-		//summary.clear();
-		
 		for(Category c:subSet){
 			String sub=c.getCategory();
 			long coverage=ECoverage.get(sub);
@@ -133,6 +119,20 @@ public class WebDatabaseClassification {
 		if(result.isEmpty()){ // Cannot classify more specifically than this category 
 			return mainCategory;
 		}
+		//the content summary for mainCategory has been done
+		String filename=mainCategory+"-"+site+".txt";
+		System.out.println("output:"+filename);
+		try {
+			outputSummary(summary, filename);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//clean up for next level summary
+		//samples.clear();
+		//summary.clear();
+
 		return result;
 	}
 	
