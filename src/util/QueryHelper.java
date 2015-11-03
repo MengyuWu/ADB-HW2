@@ -23,7 +23,8 @@ public class QueryHelper {
 			StringBuilder sb = new StringBuilder();
 		    
 		    while (line != null) {		    	
-		    	String key=line.substring(0,line.indexOf(' ')); // category
+		    	System.out.println("reading from: " + path);
+				String key=line.substring(0,line.indexOf(' ')); // category
 		    	String queries=line.substring(line.indexOf(' ')+1); // queries
 		    	
 		    	if(hm.containsKey(key)){

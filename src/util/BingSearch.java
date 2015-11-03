@@ -101,6 +101,7 @@ public class BingSearch {
 	  public static void contentSummary(JSONObject obj, String category){
 		JSONArray webs;
 		try { // go through the web results
+			//System.out.println("Current category: " + category);
 			webs = obj.getJSONArray("Web");
 			for(int i=0; i<webs.length(); i++){
 		    	 JSONObject o=webs.getJSONObject(i);
@@ -109,11 +110,6 @@ public class BingSearch {
 				 // only add URLs that haven't already been seen
 		    	if(!WebDatabaseClassification.getSample(category).contains(url)){ // pass in the hash map
 		    		 WebDatabaseClassification.getSample(category).add(url);
-					 if (!category.equals("Root")) { // if category isn't root, also add contents to Root sample
-						if (!WebDatabaseClassification.getSample("Root").contains(url)) {
-							WebDatabaseClassification.getSample("Root").add(url); // add the URL to the Root as well
-						}
-					 }
 		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
 		    		 for(String w:set){ // take a count of each word in the set
 		    			 if(WebDatabaseClassification.getSummary(category).containsKey(w)){
@@ -122,14 +118,6 @@ public class BingSearch {
 		    			 }else{
 		    				 WebDatabaseClassification.getSummary(category).put(w,(long)1);
 		    			 }
-						 if (!category.equals("Root")) {
-						 	if (WebDatabaseClassification.getSummary("Root").containsKey(w)) {
-								long count=WebDatabaseClassification.getSummary("Root").get(w);
-								WebDatabaseClassification.getSummary("Root").put(w,count+1);
-							} else {
-								WebDatabaseClassification.getSummary("Root").put(w,(long)1);
-							}
-						 }
 		    		 }
 		    	 }
 		    	 System.out.println("words count:"+WebDatabaseClassification.getSummary(category).size());

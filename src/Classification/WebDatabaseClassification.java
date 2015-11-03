@@ -134,7 +134,7 @@ public class WebDatabaseClassification {
 				}
 		
 				//using a And b AND NOT(c) not very good
- 				count+=getCount(query, site, c.getCategory());
+ 				count+=getCount(query, site, mainCategory);
 				//System.out.println("query:"+ q +" count:"+count);
 				NOTList+=query+" ";	
 			}
@@ -262,8 +262,33 @@ public class WebDatabaseClassification {
 		root.addSubCategory(computers);
 		root.addSubCategory(health);
 		root.addSubCategory(sports);
-	
+
+		// Do the root summary
+		/*
+		String main=root.getCategory();
+		HashMap<String, ArrayList<String>> queryMap=getQueryMap(main);
+		HashMap<String, Long> ECoverage=root.getECoverage();
+		HashMap<String, Double> ESpecificity=root.getESpecificity();
+
+		System.out.println("Query Map: ");
+		System.out.println(queryMap);
+		ArrayList<String> queryList=queryMap.get(root.getCategory());
+		System.out.println("Query list: " + queryList);
+		long count=0;
+		String NOTList="";
+		for(String query:queryList){
+			 String andQuery=QueryHelper.queryAND(query);
+			 String notQuery="("+QueryHelper.queryAND(NOTList)+")";
+			 String q=andQuery;
+			 if(!NOTList.isEmpty()){
+				q=q+" AND NOT "+notQuery;
+			 }
+			 count+=getCount(query, site, "Root");
+			 NOTList+=query+" ";
+		}*/
+
 		String category=classify(root,site, tc,ts,1);
+
 		String[] categories = category.split("/");
 		for (int i = 0; i < categories.length; i++) {
 			String currentCategory = categories[i];
