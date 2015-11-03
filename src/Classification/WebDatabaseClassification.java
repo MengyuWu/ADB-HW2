@@ -142,17 +142,6 @@ public class WebDatabaseClassification {
 			total+=count;
 			ECoverage.put(sub, count); // Record coverage in the DB for this category
 		}
-
-		//the content summary for mainCategory has been done
-		/*String filename=mainCategory+"-"+site+".txt";
-		System.out.println("output:"+filename);
-		try {
-			outputSummary(summary, filename); // output after the recursion******
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}*/
 		
 		for(Category c:subSet){
 			String sub=c.getCategory();
@@ -169,11 +158,6 @@ public class WebDatabaseClassification {
 		if(result.isEmpty()){ // Cannot classify more specifically than this category 
 			return mainCategory;
 		}
-
-		//clean up for next level summary
-		//samples.clear();
-		//System.out.println("CLEARED");
-		//summary.clear();
 		
 		return result;
 	}
@@ -262,30 +246,6 @@ public class WebDatabaseClassification {
 		root.addSubCategory(computers);
 		root.addSubCategory(health);
 		root.addSubCategory(sports);
-
-		// Do the root summary
-		/*
-		String main=root.getCategory();
-		HashMap<String, ArrayList<String>> queryMap=getQueryMap(main);
-		HashMap<String, Long> ECoverage=root.getECoverage();
-		HashMap<String, Double> ESpecificity=root.getESpecificity();
-
-		System.out.println("Query Map: ");
-		System.out.println(queryMap);
-		ArrayList<String> queryList=queryMap.get(root.getCategory());
-		System.out.println("Query list: " + queryList);
-		long count=0;
-		String NOTList="";
-		for(String query:queryList){
-			 String andQuery=QueryHelper.queryAND(query);
-			 String notQuery="("+QueryHelper.queryAND(NOTList)+")";
-			 String q=andQuery;
-			 if(!NOTList.isEmpty()){
-				q=q+" AND NOT "+notQuery;
-			 }
-			 count+=getCount(query, site, "Root");
-			 NOTList+=query+" ";
-		}*/
 
 		String category=classify(root,site, tc,ts,1);
 

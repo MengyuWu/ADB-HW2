@@ -88,7 +88,7 @@ Part II uses the following Java files:
 We chose option b for this part (not including multiple-word information in
 the content summaries).
 
-Part II is done in the same function that performs the algorithm in Part I 
+Part of Part II is done in the same function that performs the algorithm in Part I 
 (classify method in WebDatabaseClassification class). After calculating the
 coverage for Ci, the classify method calls the output summmary method, 
 which outputs the content summary of the database into a text file.
