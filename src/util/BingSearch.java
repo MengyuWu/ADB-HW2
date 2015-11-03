@@ -99,8 +99,7 @@ public class BingSearch {
 	  
 	  // summarize the content of the web results for this query
 	  public static void contentSummary(JSONObject obj, String category){
-	  	System.out.println("CATEGORY: " + category);
-		  JSONArray webs;
+		JSONArray webs;
 		try { // go through the web results
 			webs = obj.getJSONArray("Web");
 			for(int i=0; i<webs.length(); i++){
@@ -108,25 +107,36 @@ public class BingSearch {
 		    	 String url=o.getString("Url"); // get the URL of the site
 		    	 System.out.println("Getting page: "+url);
 				 // only add URLs that haven't already been seen
-		    	/* if(!WebDatabaseClassification.samples.contains(url)){ // do not make this global, pass in hash map
-		    		 WebDatabaseClassification.samples.add(url);
+		    	if(!WebDatabaseClassification.getSample(category).contains(url)){ // pass in the hash map
+		    		 WebDatabaseClassification.getSample(category).add(url);
+					 if (!category.equals("Root")) { // if category isn't root, also add contents to Root sample
+						if (!WebDatabaseClassification.getSample("Root").contains(url)) {
+							WebDatabaseClassification.getSample("Root").add(url); // add the URL to the Root as well
+						}
+					 }
 		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
 		    		 for(String w:set){ // take a count of each word in the set
-		    			 if(WebDatabaseClassification.summary.containsKey(w)){
-		    				 long count=WebDatabaseClassification.summary.get(w);
-		    				 WebDatabaseClassification.summary.put(w,count+1);
+		    			 if(WebDatabaseClassification.getSummary(category).containsKey(w)){
+		    				 long count=WebDatabaseClassification.getSummary(category).get(w);
+		    				 WebDatabaseClassification.getSummary(category).put(w,count+1);
 		    			 }else{
-		    				 WebDatabaseClassification.summary.put(w,(long)1);
+		    				 WebDatabaseClassification.getSummary(category).put(w,(long)1);
 		    			 }
+						 if (!category.equals("Root")) {
+						 	if (WebDatabaseClassification.getSummary("Root").containsKey(w)) {
+								long count=WebDatabaseClassification.getSummary("Root").get(w);
+								WebDatabaseClassification.getSummary("Root").put(w,count+1);
+							} else {
+								WebDatabaseClassification.getSummary("Root").put(w,(long)1);
+							}
+						 }
 		    		 }
 		    	 }
-		    	 
-		    	 System.out.println("words count:"+WebDatabaseClassification.summary.size());*/
+		    	 System.out.println("words count:"+WebDatabaseClassification.getSummary(category).size());
 		     }			
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		     
 	  }
 	  
 	  // Obtain the number of search results obtained from querying this database

@@ -47,7 +47,11 @@ public class WebDatabaseClassification {
 	public static TreeMap<String,Long> healthSummary=new TreeMap<String,Long>();
 	public static TreeSet<String> sportsSample=new TreeSet<String>();
 	public static TreeMap<String,Long> sportsSummary=new TreeMap<String, Long>();
-	
+
+	// do a generic one for the leaf category
+	public static TreeSet<String> sample=new TreeSet<String>();
+	public static TreeMap<String,Long> summary=new TreeMap<String,Long>();
+
 	static{ // Build the hash maps
 		try {
 			QueryHelper.readQueriesOfCategory(rootQueries, "root");
@@ -69,7 +73,7 @@ public class WebDatabaseClassification {
 		} else if (category.equals("Sports")) {
 			return sportsSample;
 		} else {
-			return null;
+			return sample;
 		}
 	}
 
@@ -83,7 +87,7 @@ public class WebDatabaseClassification {
 		} else if (category.equals("Sports")) {
 			return sportsSummary;
 		} else {
-			return null;
+			return summary;
 		}
 	}
 	
