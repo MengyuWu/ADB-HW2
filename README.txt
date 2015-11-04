@@ -105,9 +105,11 @@ where each query is a page in database D. The contentSummary method will only
 go through the top 4 (or the unique sites within the top 4) results 
 returned from Bing for any given probe.
 
-Using Classification/getWordsLynx.java, it extracts the set of words in the
-result docs, and takes a count of each word in the word set. The samples set
-will only accept new URLs, hence duplicate URLs for a category will be ignored.
+Using Classification/getWordsLynx.java, the contentSummary method extracts 
+the set of words in the result docs, and takes a count of each word in the 
+word set, where the count of a word is its document frequency. The samples 
+set for any category will only accept new unique URLs, hence duplicate URLs
+for a category will be ignored.
 
 Classification/getWordsLynx.java is almost identical to the one included in
 the assignment instructions, and the functionality is identical to what was
@@ -115,12 +117,11 @@ specified in the instructions - it converts an HTML doc to lowercase, treats
 any character not in the English alphabet as a word separator, and returns the
 set of words that appear in the document.
 
-For each category a database is classified under (not including level 2
-categories), a content summary is created and output to a text file titled
-Category-siteName.txt, where each line of the file contains a word in the 
-document sample for the category and its document frequency (the count 
-stored in the summary TreeMap), or number of docs in the sample that contain
-that word. Additionally, the specifications in Part 2b) are met by .....
+Passing the parent category to the BingSearch class ensures that the specs
+in Part 2a: Document Sampling is fulfilled. For example, if a site is classified
+under Root/Health, then the Root category .txt file for this site will include
+the results of both Root-level queries and Health-level queries, while the 
+Health category .txt file will include the Health-level queries.
 
 5) Your Bing account key (so we can test your project)
 L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
