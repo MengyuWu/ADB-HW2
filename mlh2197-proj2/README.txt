@@ -94,22 +94,17 @@ classify method, the parent category is passed as a parameter to the BingSearch
 class. In the contentSummary method, called at the end of the main bingSearch
 method, any unique URLs (that haven't yet been returned in any of the query 
 probes for the current subcategory) are added to the parent category's TreeSet
-/sample, while any unique words (that haven't yet been seen in any of the query
-probes for the current subcategory) are added to the parent category's 
-TreeMap/summary. 
+/sample. The samples set for any category will only accept new unique URLs, 
+hence duplicate URLs for a category will be ignored. Additionally, for each query q
+associated with the category C, the BingSearch class only queries Bing for the top 4 
+webpages for this query, where each query is a page in database D.
 
-The summary is created for each category node C that is visited while 
-classifying database D. For each query q associated with the category C, 
-the BingSearch class queries Bing for the top 4 webpages for this query, 
-where each query is a page in database D. The contentSummary method will only
-go through the top 4 (or the unique sites within the top 4) results 
-returned from Bing for any given probe.
-
-Using Classification/getWordsLynx.java, the contentSummary method extracts 
-the set of words in the result docs, and takes a count of each word in the 
-word set, where the count of a word is its document frequency. The samples 
-set for any category will only accept new unique URLs, hence duplicate URLs
-for a category will be ignored.
+At the very end of the WebDatabaseClassification main method,
+the the content summary is generated for each non-leaf category that the 
+database falls under. Using Classification/getWordsLynx.java, the contentSummary 
+method extracts the set of words in the result docs (whose urls are obtained 
+from the sample), and takes a count of each word in the word set, where the
+count of a word is its document frequency. 
 
 Classification/getWordsLynx.java is almost identical to the one included in
 the assignment instructions, and the functionality is identical to what was
@@ -121,7 +116,16 @@ Passing the parent category to the BingSearch class ensures that the specs
 in Part 2a: Document Sampling is fulfilled. For example, if a site is classified
 under Root/Health, then the Root category .txt file for this site will include
 the results of both Root-level queries and Health-level queries, while the 
-Health category .txt file will include the Health-level queries.
+Health category .txt file will include the Health-level queries. 
+
+Since the category hierarchy is fixed, and it's impossible to know which 
+categories the database will be classified as beforehand, several versions of the
+root sample set is created, such that rootSample contains only urls from the 
+Root-level queries and rootComputerSample, rootHealthSample, and rootSportsSample
+contain the urls for both Root-level queries and queries at the Computer, Health,
+and Sports levels respectively. After the database has been classified, the 
+appropriate root sample TreeSet is used to generate the content summary for the
+Root-siteName.txt file.
 
 5) Your Bing account key (so we can test your project)
 L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
