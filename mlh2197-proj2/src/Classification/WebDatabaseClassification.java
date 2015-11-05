@@ -102,7 +102,7 @@ public class WebDatabaseClassification {
 		if (category.equals("Computers")) {
 			return rootComputerSample;
 		} else if (category.equals("Health")) {
-			return healthSample;
+			return rootHealthSample;
 		} else if (category.equals("Sports")) {
 			return rootSportsSample;
 		} else {
@@ -223,7 +223,7 @@ public class WebDatabaseClassification {
 			return null;
 		}
 	}
-
+/*
 	public static void generateSummary() {
 		TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
 		for(String w:set){ // take a count of each word in the set
@@ -235,7 +235,7 @@ public class WebDatabaseClassification {
 		    }
 		}
 	}
-	
+*/	
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
 		// Error checking for command-line arguments
 		if(args.length<4){
@@ -291,6 +291,14 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 
 		String category=classify(root,site, tc,ts,1);
+		System.out.println("Root:");
+		System.out.println(rootSample);
+		System.out.println("RootComputers:");
+		System.out.println(rootComputerSample);
+		System.out.println("RootSports:");
+		System.out.println(rootSportsSample);
+		System.out.println("RootHealth:");
+		System.out.println(rootHealthSample);
 
 		String[] categories = category.split("/");
 		for (int i = 0; i < categories.length; i++) {
