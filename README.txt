@@ -124,7 +124,8 @@ the results of both Root-level queries and Health-level queries, while the
 Health category .txt file will include the Health-level queries.
 
 5) Your Bing account key (so we can test your project)
-L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
+pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0
+L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw (this one might have hit the quota)
 
 6) Any additional information that you consider significant 
 We restricted t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
