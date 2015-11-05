@@ -350,14 +350,17 @@ public class WebDatabaseClassification {
 				try {
 					if (category.contains("Computers")) {
 						generateSummary(mainCategory, rootComputerSample, rootComputerSummary);
+						outputSummary(rootComputerSummary, filename);
 					} else if (category.contains("Health")) {
 						generateSummary(mainCategory, rootHealthSample, rootHealthSummary);
+						outputSummary(rootHealthSummary, filename);
 					} else if (category.contains("Sports")) {
 						generateSummary(mainCategory, rootSportsSample, rootSportsSummary);
+						outputSummary(rootSportsSummary, filename);
 					} else {
 						generateSummary(mainCategory, rootSample, rootSummary);
+						outputSummary(rootSummary, filename);
 					}
-					outputSummary(getSummary(mainCategory), filename); 
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
 				} catch (IOException e) {
