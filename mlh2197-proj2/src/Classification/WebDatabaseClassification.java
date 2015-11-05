@@ -37,10 +37,17 @@ public class WebDatabaseClassification {
 
 	// store number of search results returned by queries
 	public static HashMap<Query, Long> queryCacheCount=new HashMap<Query, Long>();
-	
+
 	// have a summary and sample for each non-leaf category
 	public static TreeSet<String> rootSample=new TreeSet<String>();
 	public static TreeMap<String,Long> rootSummary=new TreeMap<String,Long>();
+	public static TreeSet<String> rootComputerSample=new TreeSet<String>();
+	public static TreeMap<String,Long> rootComputerSummary=new TreeMap<String,Long>();
+	public static TreeSet<String> rootHealthSample=new TreeSet<String>();
+	public static TreeMap<String,Long> rootHealthSummary=new TreeMap<String,Long>();
+	public static TreeSet<String> rootSportsSample=new TreeSet<String>();
+	public static TreeMap<String,Long> rootSportsSummary=new TreeMap<String,Long>();
+
 	public static TreeSet<String> computerSample=new TreeSet<String>();
 	public static TreeMap<String,Long> computerSummary=new TreeMap<String,Long>();
 	public static TreeSet<String> healthSample=new TreeSet<String>();
@@ -86,6 +93,30 @@ public class WebDatabaseClassification {
 			return healthSummary;
 		} else if (category.equals("Sports")) {
 			return sportsSummary;
+		} else {
+			return summary;
+		}
+	}
+
+	public static TreeSet<String> getRootSample(String category) {
+		if (category.equals("Computers")) {
+			return rootComputerSample;
+		} else if (category.equals("Health")) {
+			return healthSample;
+		} else if (category.equals("Sports")) {
+			return rootSportsSample;
+		} else {
+			return sample;
+		}
+	}
+
+	public static TreeMap<String,Long> getRootSummary(String category) {
+		if (category.equals("Computers")) {
+			return rootComputerSummary;
+		} else if (category.equals("Health")) {
+			return rootHealthSummary;
+		} else if (category.equals("Sports")) {
+			return rootSportsSummary;
 		} else {
 			return summary;
 		}
@@ -190,6 +221,18 @@ public class WebDatabaseClassification {
 			return sportsQuereis;
 		}else{
 			return null;
+		}
+	}
+
+	public static void generateSummary() {
+		TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
+		for(String w:set){ // take a count of each word in the set
+		   	if(WebDatabaseClassification.getSummary(category).containsKey(w)){
+		    	long count=WebDatabaseClassification.getSummary(category).get(w);
+		    	WebDatabaseClassification.getSummary(category).put(w,count+1);
+		    }else{
+		    	WebDatabaseClassification.getSummary(category).put(w,(long)1);
+		    }
 		}
 	}
 	

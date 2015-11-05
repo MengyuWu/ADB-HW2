@@ -108,19 +108,19 @@ public class BingSearch {
 		    	 String url=o.getString("Url"); // get the URL of the site
 		    	 System.out.println("Getting page: "+url);
 				 // only add URLs that haven't already been seen
+		    					 // only add URLs that haven't already been seen
 		    	if(!WebDatabaseClassification.getSample(category).contains(url)){ // pass in the hash map
 		    		 WebDatabaseClassification.getSample(category).add(url);
-		    		 TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
-		    		 for(String w:set){ // take a count of each word in the set
-		    			 if(WebDatabaseClassification.getSummary(category).containsKey(w)){
-		    				 long count=WebDatabaseClassification.getSummary(category).get(w);
-		    				 WebDatabaseClassification.getSummary(category).put(w,count+1);
-		    			 }else{
-		    				 WebDatabaseClassification.getSummary(category).put(w,(long)1);
-		    			 }
-		    		 }
-		    	 }
-		    	 System.out.println("words count:"+WebDatabaseClassification.getSummary(category).size());
+		    	}
+
+		    	// make sure the root + this category forms a set
+		    	if (!category.equals("Root") && (category.equals("Computer") || category.equals("Sports") ||
+		    		category.equals("Health")))) {
+		    		if (!WebDatabaseClassification.getRootSample(category).contains(url)) {
+		    			WebDatabaseClassification.getRootSample(category).add(url)
+		    		}
+		    	}
+		    	System.out.println("words count:"+WebDatabaseClassification.getSummary(category).size());
 		     }			
 		} catch (JSONException e) {
 			e.printStackTrace();
