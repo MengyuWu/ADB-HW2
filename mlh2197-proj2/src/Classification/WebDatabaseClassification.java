@@ -223,19 +223,38 @@ public class WebDatabaseClassification {
 			return null;
 		}
 	}
-/*
-	public static void generateSummary() {
-		TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
-		for(String w:set){ // take a count of each word in the set
-		   	if(WebDatabaseClassification.getSummary(category).containsKey(w)){
-		    	long count=WebDatabaseClassification.getSummary(category).get(w);
-		    	WebDatabaseClassification.getSummary(category).put(w,count+1);
-		    }else{
-		    	WebDatabaseClassification.getSummary(category).put(w,(long)1);
-		    }
+
+	// Generate content summary based on the set of URLs returned by probes for the category
+	public static void generateSummary(String category) {
+		TreeSet<String> currentSet = getSample(category);
+		for (String url:currentSet) {
+			TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
+			for(String w:set){ // take a count of each word in the set
+		   		if(WebDatabaseClassification.getSummary(category).containsKey(w)){
+		    		long count=WebDatabaseClassification.getSummary(category).get(w);
+		    		WebDatabaseClassification.getSummary(category).put(w,count+1);
+		    	} else{
+		    		WebDatabaseClassification.getSummary(category).put(w,(long)1);
+		   		}
+			}
 		}
 	}
-*/	
+
+	public static void generateSummary(String category, TreeSet<String> currentSet, TreeMap<String,Long> summary) {
+		for (String url:currentSet) {
+			//System.out.println("URL: " + url);
+			TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
+			for(String w:set){ // take a count of each word in the set
+		   		if(summary.containsKey(w)){
+		    		long count=summary.get(w);
+		    		summary.put(w,count+1);
+		    	} else{
+		    		summary.put(w,(long)1);
+		   		}
+			}
+		}
+	}
+
 	public static void main(String[] args) throws IOException, EncoderException, JSONException {
 		// Error checking for command-line arguments
 		if(args.length<4){
@@ -291,14 +310,14 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 
 		String category=classify(root,site, tc,ts,1);
-		System.out.println("Root:");
+		/*System.out.println("Root:");
 		System.out.println(rootSample);
 		System.out.println("RootComputers:");
 		System.out.println(rootComputerSample);
 		System.out.println("RootSports:");
 		System.out.println(rootSportsSample);
 		System.out.println("RootHealth:");
-		System.out.println(rootHealthSample);
+		System.out.println(rootHealthSample);*/
 
 		String[] categories = category.split("/");
 		for (int i = 0; i < categories.length; i++) {
@@ -317,12 +336,33 @@ public class WebDatabaseClassification {
 				continue; // ignore the leaf nodes
 			}
 			filename += mainCategory+"-"+site+".txt";
-			try {
-				outputSummary(getSummary(mainCategory), filename); // output the summary to the text file
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
+			System.out.println("Generating: " + filename);
+			if (!currentCategory.equals("Root")) {
+				try {
+					generateSummary(mainCategory);
+					outputSummary(getSummary(mainCategory), filename); // output the summary to the text file
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			} else {
+				try {
+					if (category.contains("Computers")) {
+						generateSummary(mainCategory, rootComputerSample, rootComputerSummary);
+					} else if (category.contains("Health")) {
+						generateSummary(mainCategory, rootHealthSample, rootHealthSummary);
+					} else if (category.contains("Sports")) {
+						generateSummary(mainCategory, rootSportsSample, rootSportsSummary);
+					} else {
+						generateSummary(mainCategory, rootSample, rootSummary);
+					}
+					outputSummary(getSummary(mainCategory), filename); 
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		System.out.println(site+" "+category); // Final output
