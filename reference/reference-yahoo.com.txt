@@ -1,0 +1,976 @@
+mlh2197@beijing:~/ADB-HW2/reference$ /home/gravano/6111/Html/Proj2/bin/run.sh
+pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0 0.6 100 yahoo.com
+
+
+Classifying...
+Specificity for category:Computers is 0.20588966423409508
+Coverage for category:Computers is 6957300
+Specificity for category:Health is 0.38385506371443623
+Coverage for category:Health is 12971000
+Specificity for category:Sports is 0.4102552720514687
+Coverage for category:Sports is 13863100
+
+
+Classification:
+Root
+
+
+Extracting topic content summaries...
+Creating Content Summary for:Root
+1/66   
+
+Getting page: http://finance.yahoo.com/q?s=cpu.ax
+
+
+Getting page: http://finance.yahoo.com/lookup?s=cpu
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20110714084115AAHL1Ra
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070603222731AAaMbHn
+2/66   
+
+Getting page: http://finance.yahoo.com/q?s=JAVA
+
+
+Getting page: http://finance.yahoo.com/q/ks?s=JAVA
+
+
+Getting page: https://developer.yahoo.com/java/
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20060916003515AAMaCBa
+3/66   
+
+Getting page:
+https://developer.yahoo.com/ypatterns/richinteraction/dragdrop/modules.html
+
+
+Getting page:
+https://developer.yahoo.com/ypatterns/navigation/tabs/moduletabs.html
+
+
+Getting page: https://answers.yahoo.com/question/index?qid=1006011501334
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080408182520AAVMQsZ
+4/66   
+
+Getting page: https://shopping.yahoo.com/design-multimedia-software/
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20071104054152AAo6s4D
+
+
+Getting page: http://biz.yahoo.com/ic/820.html
+
+
+Getting page: https://shopping.yahoo.com/best-multimedia-suite--shop/
+5/66   
+
+Getting page: http://finance.yahoo.com/q?s=perl
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080911141510AAGircF
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20060605211519AAbQ2NG
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090329205708AAc8oDc
+6/66   
+
+Getting page: http://finance.yahoo.com/q?s=VB
+
+
+Getting page: http://finance.yahoo.com/q/pr?s=VB
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090311053401AArXEjJ
+
+
+Getting page: http://finance.yahoo.com/echarts?s=VB
+7/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20060929102412AAwr7w8
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090430152201AAmffLq
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090106200708AAHCZnT
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20111104053804AAUyzdt
+8/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20081019202612AAjB8eD
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090320031059AA3mePb
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20111202192117AAAgkFp
+
+
+Getting page: https://help.yahoo.com/kb/mail-app-for-windows-8
+9/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080711003842AAEFK57
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070510070402AARPiQT
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20120129125342AAFRYM7
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20120508034125AAwVGHK
+10/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080611215537AArELdO
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090407222344AAjwOXI
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090112221452AAqVErK
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080404114642AAmF68Y
+11/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080527084531AAIFIPq
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20100725230023AAyRpnu
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20101117162641AAiNIXS
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20120928031508AAeOPDq
+12/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080824093620AAJGRut
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20081021040045AAkzrmE
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20100122163237AAFTApW
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070626082338AA05fUC
+13/66   
+
+Getting page: http://finance.yahoo.com/q?s=bios
+
+
+Getting page: http://finance.yahoo.com/echarts?s=BIOS+Interactive
+
+
+Getting page: http://finance.yahoo.com/q/pr?s=BIOS+Profile
+
+
+Getting page: http://finance.yahoo.com/q/it?s=bios
+14/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080917115709AAYElTy
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20110314060202AAVLQLI
+
+
+Getting page:
+https://in.answers.yahoo.com/question/index?qid=20080124201312AAdvW6s
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090112030247AAU953R
+15/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20100930085935AAZsDSv
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20061212001850AAyJiaZ
+
+
+Getting page:
+https://uk.answers.yahoo.com/question/index?qid=20101128101116AA5y8Oo
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20091013084139AAAuaGz
+16/66   
+
+Getting page:
+https://business.yahoo.com/Business_and_Economy/companies/computers/software/games/shareware/
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20060723064021AAijOiz
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070406084528AAIOOYm
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20061111192846AARzbbU
+17/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20101124181322AA4UROO
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20110205155958AAiif7J
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20130430051010AAXbsDE
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20120907172628AAOKq1Y
+18/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090112060057AA6qStK
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070425215735AABHvIW
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20120526053532AACVGHx
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20151030110833AATzzLO
+19/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080501200041AAogRXV
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080626201341AAs32uf
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20061024063309AAAQIWn
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20130518213347AA3P2AK
+20/66   
+
+Getting page: https://shopping.yahoo.com/windows-pc--shop/
+
+
+Getting page: http://messenger.yahoo.com/win
+
+
+Getting page:
+https://www.yahoo.com/tech/pc-slowing-down-heres-how-to-speed-it-up-with-84919144919.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20120317122841AAu9C36
+21/66   
+
+Getting page: https://screen.yahoo.com/acupuncture-000000104.html
+
+
+Getting page:
+https://www.yahoo.com/beauty/the-beauty-benefits-of-acupuncture-102477242560.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080601215158AA2viTx
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070709200158AARYCNE
+22/66   
+
+Getting page:
+https://local.yahoo.com/info-12313437-aerobic-rhythmics-collegeville
+
+
+Getting page:
+http://news.yahoo.com/combining-aerobic-resistance-exercise-may-best-diabetes-144233663.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080506211828AAOD7Ls
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070223065827AAVWnTH
+23/66   
+
+Getting page:
+https://au.answers.yahoo.com/question/index?qid=20070211215646AAqaNr3
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080430072046AAwBMpP
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080518040641AAlGQD2
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070421181210AAdYDrq
+24/66   
+
+Getting page: http://news.yahoo.com/topics/hiv-aids/
+
+
+Getting page:
+http://news.yahoo.com/scientists-mechanism-spontaneous-hiv-cure-111655252.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20151031221314AA54B2I
+
+
+Getting page:
+https://www.yahoo.com/health/the-sex-accessories-that-gynecologists-love-102954359887.html
+25/66   
+
+Getting page: http://news.yahoo.com/topics/cancer/
+
+
+Getting page: https://celebrity.yahoo.com/horoscope/cancer/
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080502081339AAW1Tbs
+
+
+Getting page:
+https://www.yahoo.com/health/17-red-flag-signs-of-cancer-110161560812.html
+26/66   
+
+Getting page:
+https://local.yahoo.com/info-20659768-cardiology-consultants-medical-tarzana
+
+
+Getting page:
+https://local.yahoo.com/info-27753689-clarence-cardiology-llc-clarence
+
+
+Getting page:
+https://local.yahoo.com/info-102821979-keys-cardiology-lehigh-acres
+
+
+Getting page:
+https://local.yahoo.com/info-42214510-berkshire-cardiology-pittsfield
+27/66   
+
+Getting page:
+https://www.yahoo.com/health/cholesterol-fat-salt-making-comeback-but-110717999167.html
+
+
+Getting page:
+http://news.yahoo.com/cholesterol-no-longer-concern-us-experts-205548731.html
+
+
+Getting page:
+http://news.yahoo.com/sanofi-cholesterol-drug-touted-potential-3-billion-blockbuster-155302519--finance.html
+
+
+Getting page:
+http://news.yahoo.com/good-cholesterol-whats-number-110000281.html
+28/66   
+
+Getting page: http://news.yahoo.com/topics/diabetes/
+
+
+Getting page: https://answers.yahoo.com/dir/index?sid=396545384
+
+
+Getting page: https://answers.yahoo.com/question/index?qid=1006031403300
+
+
+Getting page:
+https://www.yahoo.com/health/nearly-30-of-americans-who-have-diabetes-dont-know-it-103061080597.html
+29/66   
+
+Getting page:
+https://www.yahoo.com/health/meet-the-mind-diet-it-slashes-alzheimers-risk-113985079792.html
+
+
+Getting page:
+https://www.yahoo.com/health/11-diet-foods-that-make-you-fat-91955213282.html
+
+
+Getting page:
+https://www.yahoo.com/health/the-dash-diet-is-the-best-diet-in-america-so-why-107415088427.html
+
+
+Getting page: https://answers.yahoo.com/dir/index?sid=396545382
+30/66   
+
+Getting page: https://www.yahoo.com/health/tagged/fitness
+
+
+Getting page:
+https://www.yahoo.com/health/the-1-fitness-trend-of-2015-119451575023.html
+
+
+Getting page: https://local.yahoo.com/info-19981314-la-fitness-phoenix
+
+
+Getting page:
+https://www.yahoo.com/health/7-things-fitness-experts-wish-youd-stop-doing-in-118383622492.html
+31/66   
+
+Getting page:
+https://www.yahoo.com/health/woman-may-have-contracted-hiv-from-manicure-should-you-102626062832.html
+
+
+Getting page:
+http://news.yahoo.com/tuberculosis-now-rivals-aids-leading-cause-death-150543748.html
+
+
+Getting page:
+https://www.yahoo.com/health/the-puzzling-link-between-hiv-diagnoses-and-109987894272.html
+32/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20061220172015AAacJNc
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070211160105AA0bar6
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070905181245AAhaxsO
+
+
+Getting page:
+https://www.yahoo.com/health/why-is-insulin-so-expensive-but-only-in-america-114066603007.html
+33/66   
+
+Getting page:
+http://news.yahoo.com/ebola-diagnosed-in-second-dallas-nurse-105542930.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080114120617AADVshI
+
+
+Getting page:
+http://news.yahoo.com/nina-pham-identified-as-dallas-nurse-with-ebola-165521689.html
+
+
+Getting page:
+http://news.yahoo.com/doctor-gives-blood-ebola-infected-dallas-nurse-050231595.html
+34/66   
+
+Getting page:
+https://www.yahoo.com/health/6-ways-youre-doing-squats-wrong-91154630467.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080414140014AADBS5D
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080417182050AAg9m7i
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080519115727AAcBjfU
+35/66   
+
+Getting page: https://shopping.yahoo.com/treadmills/
+
+
+Getting page: https://shopping.yahoo.com/treadmills/nordictrack--brand/
+
+
+Getting page: https://shopping.yahoo.com/treadmills/proform--brand/
+
+
+Getting page: https://shopping.yahoo.com/treadmills/image--brand/
+36/66   
+
+Getting page:
+https://www.yahoo.com/movies/fast-furious-7-set-pics-paul-walkers-brother-86413947277.html
+
+
+Getting page:
+https://local.yahoo.com/UT/Salt+Lake+City/Health+Beauty/Medical+Supplies+Equipment/Wheelchairs+Walkers
+
+
+Getting page:
+https://www.yahoo.com/politics/scott-walkers-gloomy-pitch-for-the-presidency-114940203681.html
+
+
+Getting page: https://shopping.yahoo.com/nova-walkers--shop/
+37/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080730092058AAWx8ZW
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20070926191710AA2LHv3
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20071125142007AAHlCz8
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20081030203424AAKXQRX
+38/66   
+
+Getting page: http://finance.yahoo.com/q?s=CARB
+
+
+Getting page:
+https://www.yahoo.com/food/should-you-try-lebrons-low-carb-diet-98333804253.html
+
+
+Getting page:
+http://news.yahoo.com/3-tips-following-low-carb-diets-152950499.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20100302171534AAUo87p
+39/66   
+
+Getting page: https://www.yahoo.com/health
+
+
+Getting page:
+https://www.yahoo.com/health/dr-oz-defends-medical-advice-after-peers-call-for-116580311342.html
+
+
+Getting page: http://news.yahoo.com/keep-doctor-health-plan-132631002.html
+
+
+Getting page:
+https://local.yahoo.com/info-38908232-doctors-health-center-ringgold
+40/66   
+
+Getting page:
+https://local.yahoo.com/info-20869018-call-doctor-medical-group-san-diego
+
+
+Getting page:
+https://local.yahoo.com/info-21665559-doctors-medical-center-modesto
+
+
+Getting page:
+https://local.yahoo.com/info-37489412-williams-jr-sam-md-williams-jr-sam-md-my-doctor-medical-center-san-diego
+
+
+Getting page:
+http://news.yahoo.com/top-u-doctor-says-medical-marijuana-may-help-182719568.html
+41/66   
+
+Getting page:
+https://www.yahoo.com/health/8-signs-youre-not-eating-enough-fat-100244498228.html
+
+
+Getting page: http://news.yahoo.com/video/eat-fat-lose-weight-034440528.html
+
+
+Getting page:
+https://uk.answers.yahoo.com/question/index?qid=20070310011025AAFuwPN
+42/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080525134215AA1tQch
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20100626103451AAvhNYz
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20060826173453AAJ5wlB
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20081001130728AAc4TAM
+43/66   
+
+Getting page: http://news.yahoo.com/health/
+
+
+Getting page:
+https://local.yahoo.com/info-37082800-horseshoe-health-medicine-horseshoe-bend
+
+
+Getting page: https://answers.yahoo.com/dir/index?sid=396545018
+44/66   
+
+Getting page: https://www.yahoo.com/health/tagged/nutrition
+
+
+Getting page:
+https://www.yahoo.com/health/the-10-best-nutrition-tips-ever-101706257283.html
+
+
+Getting page:
+https://local.yahoo.com/info-14676313-lake-nutrition-center-leesburg
+45/66   
+
+Getting page:
+https://local.yahoo.com/info-19509981-medical-ctr-hospital-odessa
+
+
+Getting page:
+https://local.yahoo.com/info-13897740-medical-center-hospital-columbus?csz=Columbus%2C+GA
+
+
+Getting page:
+https://local.yahoo.com/info-34313639-united-medical-rehab-hospital-hammond
+
+
+Getting page:
+https://local.yahoo.com/info-20755745-whittier-hospital-medical-center-rowland-heights
+46/66   
+
+Getting page:
+http://finance.yahoo.com/news/hospitals-overcharge-patients-1000-200000888.html
+
+
+Getting page:
+http://news.yahoo.com/patients-shot-hospital-beds-horrific-sudan-civil-war-072036621.html
+
+
+Getting page:
+http://news.yahoo.com/pet-therapy-hospitals-allow-patients-own-dogs-visit-230142986--abc-news-wellness.html
+
+
+Getting page:
+http://news.yahoo.com/oregon-hospital-patients-burned-lights-operating-rooms-002354009.html
+47/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20061226042419AAn00W0
+
+
+Getting page:
+http://finance.yahoo.com/news/aethlon-medical-announces-first-patient-115900543.html
+
+
+Getting page:
+https://local.yahoo.com/info-42291867-patients-medical-center-pasadena
+
+
+Getting page:
+http://news.yahoo.com/hospital-says-medication-error-killed-patient-200501465.html
+48/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090221183246AAeUGK5
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080424051017AA2GZZL
+
+
+Getting page:
+http://news.yahoo.com/hamas-leaders-daughter-received-medical-treatment-israel-sources-154814306.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090201122703AAolj9t
+49/66   
+
+Getting page:
+http://news.yahoo.com/cancer-patients-testing-drugs-mouse-avatars-121629466.html
+
+
+Getting page:
+http://finance.yahoo.com/news/first-patient-treatment-cyberknife-m6-123000674.html
+
+
+Getting page:
+https://sg.answers.yahoo.com/question/index?qid=20100314202447AAGjoKE
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080104164305AA1Ep0V
+50/66   
+
+Getting page: http://sports.yahoo.com/nba/teams/lal/
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20071116033034AAgAe1i
+
+
+Getting page:
+http://sports.yahoo.com/news/kobe-bryant--i-don-t-even-think-about-leaving-the-lakers-022609397.html
+
+
+Getting page:
+http://sports.yahoo.com/blogs/nba-ball-dont-lie/former-laker-camp-invitee-recalls-the-time-he-was-torn-to-bits-by-kobe-bryant-in-practice-000343433.html
+51/66   
+
+Getting page: http://sports.yahoo.com/college-basketball/
+
+
+Getting page: http://sports.yahoo.com/college-football/
+
+
+Getting page: http://sports.yahoo.com/college-basketball/bracket/
+
+
+Getting page: http://sports.yahoo.com/ncaa/basketball/standings
+52/66   
+
+Getting page:
+http://sports.yahoo.com/blogs/nba-ball-dont-lie/hall-of-famer--pacers-legend-mel-daniels-dies-at-71-013220165.html
+
+
+Getting page:
+http://sports.yahoo.com/news/gasol-conley-help-grizzlies-past-pacers-112-103-014544616--nba.html
+
+
+Getting page:
+http://news.yahoo.com/mel-daniels-hall-fame-center-pacers-dies-71-220243656--spt.html
+
+
+Getting page:
+http://sports.yahoo.com/news/derozan-scores-25-lowry-23-raptors-beat-pacers-022745481--nba.html
+53/66   
+
+Getting page: http://sports.yahoo.com/soccer/
+
+
+Getting page: http://sports.yahoo.com/soccer/mls/
+
+
+Getting page: http://sports.yahoo.com/soccer/mls/scoreboard/
+
+
+Getting page: http://sports.yahoo.com/soccer/rss.xml
+54/66   
+
+Getting page: http://sports.yahoo.com/ncaa/football/teams
+
+
+Getting page: http://sports.yahoo.com/nba/teams/
+
+
+Getting page: http://sports.yahoo.com/ncaa/basketball/teams
+
+
+Getting page: http://sports.yahoo.com/mlb/teams/
+55/66   
+
+Getting page: http://sports.yahoo.com/wnba/
+
+
+Getting page: http://sports.yahoo.com/wnba/rss.xml
+
+
+Getting page: http://sports.yahoo.com/wnba/teams/los/
+
+
+Getting page: http://sports.yahoo.com/wnba/teams/min/
+56/66   
+
+Getting page: http://sports.yahoo.com/nba/
+
+
+Getting page: http://sports.yahoo.com/nba/players
+
+
+Getting page: http://sports.yahoo.com/nba/stats
+
+
+Getting page: http://sports.yahoo.com/nba/morenews/
+57/66   
+
+Getting page: http://sports.yahoo.com/mlb/stats/byposition
+
+
+Getting page:
+http://sports.yahoo.com/mlb/stats/bycategory?cat=Batting&conference=NL&sort=22
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20080603163824AAZO2EH
+
+
+Getting page: http://sports.yahoo.com/mlb/stats/byteam?cat=Overall&sort=722
+58/66   
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090323174528AAUHjUQ
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20121211190905AACdbkm
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20071022170309AAQmTAY
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090110183311AAY1uPm
+59/66   
+
+Getting page: http://baseball.fantasysports.yahoo.com/b1/8708/
+
+
+Getting page:
+https://local.yahoo.com/info-39752850-ball-jeffrey-w-dds-jeffrey-w-ball-pc-league-city
+
+
+Getting page: http://baseball.fantasysports.yahoo.com/b1/8708/3
+
+
+Getting page:
+http://baseball.fantasysports.yahoo.com/b1/143962/6/team?&date=2015-08-29&stat1=S&stat2=D
+60/66   
+
+Getting page:
+https://uk.answers.yahoo.com/question/index?qid=20080817100419AA6YRCA
+
+
+Getting page:
+http://sports.yahoo.com/blogs/nba-ball-dont-lie/the-nba-s-referee-review-policy-claims-its-first-victim--j-j--redick-s-wallet-221545827.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20090529090234AAKSeLK
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20060904205618AA4SwC4
+61/66   
+
+Getting page:
+https://gma.yahoo.com/girl-t-ball-team-hits-home-run-frozen-182326721--abc-news-parenting.html
+
+
+Getting page:
+http://sports.yahoo.com/blogs/nba-ball-dont-lie/laker-boss-jim-buss-is-happy-his-team-has--turned-the-corner-211707125.html
+62/66   
+
+Getting page: http://sports.yahoo.com/nba/teams/por/
+
+
+Getting page:
+http://sports.yahoo.com/blogs/nba-ball-dont-lie/westboro-baptist-church-to-protest-outside-blazers-game-saturday-200855373.html
+
+
+Getting page:
+http://sports.yahoo.com/news/sources--nba-postpones-blazers-nets-game-163427253.html
+
+
+Getting page: https://games.yahoo.com/game/word-roundup-trailblazer.html
+63/66   
+
+Getting page: http://sports.yahoo.com/soccer/championship/teams/
+
+
+Getting page:
+http://sports.yahoo.com/news/chicagos-little-league-championship-team-stripped-title-142348967--spt.html
+
+
+Getting page: https://uk.sports.yahoo.com/football/championship/teams/
+
+
+Getting page:
+http://sports.yahoo.com/news/belmont-preseason-favorite-win-ovc-championship-211807456--ncaab.html
+64/66   
+
+Getting page: https://local.yahoo.com/info-42303705-tutoring-club-league-city
+
+
+Getting page: http://sports.yahoo.com/soccer/teams/athletic-club/
+
+
+Getting page:
+http://football.fantasysports.yahoo.com/f1/673172?matchup_week=9&module=matchups&lhst=matchups
+
+
+Getting page:
+http://sports.yahoo.com/news/soccer-premier-league-club-club-preview-015951162--sow.html
+65/66   
+
+Getting page: http://football.fantasysports.yahoo.com/
+
+
+Getting page:
+http://sports.yahoo.com/blogs/nfl-shutdown-corner/team-most-loyal-fans-science-says-dallas-cowboys-171057776.html
+
+
+Getting page:
+http://sports.yahoo.com/blogs/nfl-shutdown-corner/classy-saints-fan-steals-football-meant-for-female-bengals-fan-200638811.html
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20071214033507AAArj7g
+66/66   
+
+Getting page: https://games.yahoo.com/game/league-of-angels.html
+
+
+Getting page: http://baseball.fantasysports.yahoo.com/league/gameofthrones2015
+
+
+Getting page:
+https://answers.yahoo.com/question/index?qid=20101102214535AAUf6GT
+
+
+Getting page:
+https://games.yahoo.com/news/league-legends-upending-video-game-180002839.html
+
