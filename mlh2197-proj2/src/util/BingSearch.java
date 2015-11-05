@@ -53,7 +53,6 @@ public class BingSearch {
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
-
 		// Create connection object
 		URLConnection urlConnection=null;
 		try {
@@ -68,6 +67,7 @@ public class BingSearch {
 		try {
 			inputStream = (InputStream) urlConnection.getContent();
 		} catch (IOException e) {
+			System.out.println("cannot get content");
 			e.printStackTrace();
 		}		
 		
@@ -106,9 +106,9 @@ public class BingSearch {
 		    	JSONObject o=webs.getJSONObject(i);
 		    	String url=o.getString("Url"); // get the URL of the site
 		    	System.out.println("Getting page: "+url);
-				/*if (url.contains(".pdf") || url.contains(".ppt")) {
+				if (url.contains(".pdf") || url.contains(".ppt")) {
 					continue;
-				}*/
+				}
 		    	// only add URLs that haven't already been seen
 				if(!WebDatabaseClassification.getSample(category).contains(url)){ // pass in the hash map
 		    		 WebDatabaseClassification.getSample(category).add(url);
