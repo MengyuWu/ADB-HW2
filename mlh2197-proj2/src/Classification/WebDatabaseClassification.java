@@ -77,20 +77,26 @@ public class WebDatabaseClassification {
 			System.out.println("Writing to sports sample.");
 			return sportsSample;
 		} else {
+			System.out.println("ERROR WRONG SAMPLE!");
 			return sample;
 		}
 	}
 
 	public static TreeMap<String,Long> getSummary(String category) {
 		if (category.equals("Root")) {
+			System.out.println("Writing to root summary.");
 			return rootSummary;
 		} else if (category.equals("Computers")) {
+			System.out.println("Writing to computers summary.");
 			return computerSummary;
 		} else if (category.equals("Health")) {
+			System.out.println("Writing to health summary.");
 			return healthSummary;
 		} else if (category.equals("Sports")) {
+			System.out.println("Writing to sports summary.");
 			return sportsSummary;
 		} else {
+			System.out.println("ERROR WRONG SUMMARY!");
 			return summary;
 		}
 	}
@@ -201,13 +207,16 @@ public class WebDatabaseClassification {
 	public static void generateSummary(String category) {
 		TreeSet<String> currentSet = getSample(category);
 		for (String url:currentSet) {
+			System.out.println("Current url: " + url);
 			TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
+			System.out.println("Word set: " + set);
+			TreeMap<String,Long> summary = getSummary(category);
 			for(String w:set){ // take a count of each word in the set
-		   		if(WebDatabaseClassification.getSummary(category).containsKey(w)){
-		    		long count=WebDatabaseClassification.getSummary(category).get(w);
-		    		WebDatabaseClassification.getSummary(category).put(w,count+1);
+		   		if(summary.containsKey(w)){
+		    		long count=summary.get(w);
+		    		summary.put(w,count+1);
 		    	} else{
-		    		WebDatabaseClassification.getSummary(category).put(w,(long)1);
+		    		summary.put(w,(long)1);
 		   		}
 			}
 		}
@@ -279,6 +288,8 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 
 		String category=classify(root,site, tc,ts,1);
+		System.out.println("Health sample: " + healthSample);
+		System.out.println("Root sample: " + rootSample);
 		if (category.contains("Computers")) {
 			System.out.println("Merge root & computers");
 			mergeSet(computerSample);
@@ -289,7 +300,7 @@ public class WebDatabaseClassification {
 			System.out.println("Merge root and sports");
 			mergeSet(sportsSample);
 		}
-
+		System.out.println("New root sample: " + rootSample);
 		String[] categories = category.split("/");
 		for (int i = 0; i < categories.length; i++) {
 			String currentCategory = categories[i];
