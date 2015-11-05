@@ -41,13 +41,6 @@ public class WebDatabaseClassification {
 	// have a summary and sample for each non-leaf category
 	public static TreeSet<String> rootSample=new TreeSet<String>();
 	public static TreeMap<String,Long> rootSummary=new TreeMap<String,Long>();
-	public static TreeSet<String> rootComputerSample=new TreeSet<String>();
-	public static TreeMap<String,Long> rootComputerSummary=new TreeMap<String,Long>();
-	public static TreeSet<String> rootHealthSample=new TreeSet<String>();
-	public static TreeMap<String,Long> rootHealthSummary=new TreeMap<String,Long>();
-	public static TreeSet<String> rootSportsSample=new TreeSet<String>();
-	public static TreeMap<String,Long> rootSportsSummary=new TreeMap<String,Long>();
-
 	public static TreeSet<String> computerSample=new TreeSet<String>();
 	public static TreeMap<String,Long> computerSummary=new TreeMap<String,Long>();
 	public static TreeSet<String> healthSample=new TreeSet<String>();
@@ -72,12 +65,16 @@ public class WebDatabaseClassification {
 
 	public static TreeSet<String> getSample(String category) {
 		if (category.equals("Root")) {
+			System.out.println("Writing to root sample.");
 			return rootSample;
 		} else if (category.equals("Computers")) {
+			System.out.println("Writing to computers sample.");
 			return computerSample;
 		} else if (category.equals("Health")) {
+			System.out.println("Writing to health sample.");
 			return healthSample;
 		} else if (category.equals("Sports")) {
+			System.out.println("Writing to sports sample.");
 			return sportsSample;
 		} else {
 			return sample;
@@ -86,42 +83,22 @@ public class WebDatabaseClassification {
 
 	public static TreeMap<String,Long> getSummary(String category) {
 		if (category.equals("Root")) {
+			System.out.println("Writing to root summary.");
 			return rootSummary;
 		} else if (category.equals("Computers")) {
+			System.out.println("Writing to computers summary.");
 			return computerSummary;
 		} else if (category.equals("Health")) {
+			System.out.println("Writing to health summary.");
 			return healthSummary;
 		} else if (category.equals("Sports")) {
+			System.out.println("Writing to sports summary.");
 			return sportsSummary;
 		} else {
 			return summary;
 		}
 	}
 
-	public static TreeSet<String> getRootSample(String category) {
-		if (category.equals("Computers")) {
-			return rootComputerSample;
-		} else if (category.equals("Health")) {
-			return rootHealthSample;
-		} else if (category.equals("Sports")) {
-			return rootSportsSample;
-		} else {
-			return sample;
-		}
-	}
-
-	public static TreeMap<String,Long> getRootSummary(String category) {
-		if (category.equals("Computers")) {
-			return rootComputerSummary;
-		} else if (category.equals("Health")) {
-			return rootHealthSummary;
-		} else if (category.equals("Sports")) {
-			return rootSportsSummary;
-		} else {
-			return summary;
-		}
-	}
-	
 	// Query using the Bing API, return number of search results (get previous searches from the cache)
 	public static long getCount(String query, String site, String category) throws EncoderException, JSONException{
 		Query q=new Query(query,site);
@@ -337,7 +314,7 @@ public class WebDatabaseClassification {
 			}
 			filename += mainCategory+"-"+site+".txt";
 			System.out.println("Generating: " + filename);
-			if (!currentCategory.equals("Root")) {
+			/*if (!currentCategory.equals("Root")) {
 				try {
 					generateSummary(mainCategory);
 					outputSummary(getSummary(mainCategory), filename); // output the summary to the text file
@@ -366,7 +343,7 @@ public class WebDatabaseClassification {
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-			}
+			}*/
 		}
 		System.out.println(site+" "+category); // Final output
 	}

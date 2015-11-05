@@ -91,7 +91,7 @@ public class BingSearch {
 	    Query q=new Query(queryTermsStr,site);
 	    WebDatabaseClassification.queryCacheDoc.put(q,result); // cache query result
 	    WebDatabaseClassification.queryCacheCount.put(q,num); // how many results for this query
-	    
+	    System.out.println("QUERY: [" + query + "]");
 	    contentSummary(result, category); // this is static , need to pass in the category
 	    
 	    return num;
@@ -103,26 +103,12 @@ public class BingSearch {
 		try { // go through the web results
 			webs = obj.getJSONArray("Web");
 			for(int i=0; i<webs.length(); i++){
-		    	 JSONObject o=webs.getJSONObject(i);
-		    	 String url=o.getString("Url"); // get the URL of the site
-		    	 System.out.println("Getting page: "+url);
+		    	JSONObject o=webs.getJSONObject(i);
+		    	String url=o.getString("Url"); // get the URL of the site
+		    	System.out.println("Getting page: "+url);
 		    	// only add URLs that haven't already been seen
 		    	if(!WebDatabaseClassification.getSample(category).contains(url)){ // pass in the hash map
 		    		 WebDatabaseClassification.getSample(category).add(url);
-		    	}
-				if (category.equals("Root")) { // add the root-level queries to all rootSamples
-					if (!WebDatabaseClassification.rootComputerSample.contains(url))
-						WebDatabaseClassification.rootComputerSample.add(url);
-					if (!WebDatabaseClassification.rootHealthSample.contains(url))
-						WebDatabaseClassification.rootHealthSample.add(url);
-					if (!WebDatabaseClassification.rootSportsSample.contains(url))
-						WebDatabaseClassification.rootSportsSample.add(url);
-				}
-		    	// make sure the root + this category's urls form a set
-				else {
-		    		if (!WebDatabaseClassification.getRootSample(category).contains(url)) {
-		    			WebDatabaseClassification.getRootSample(category).add(url);
-		    		}
 		    	}
 		    	//System.out.println("words count:"+WebDatabaseClassification.getSummary(category).size());
 		     }			
