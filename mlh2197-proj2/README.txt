@@ -75,8 +75,6 @@ any subcategories of any category, then the classification will be only Root.
 The Category and Query classes are necessary because we need the concept of
 Categories and Queries in order to execute this algorithm.
 
-//TODO: talk about NOT queries here or try running w/o them
-
 Part II uses the following Java files:
 	Classification/WebDatabaseClassification.java
 	Classification/getWordsLynx.java
@@ -128,7 +126,8 @@ appropriate root sample TreeSet is used to generate the content summary for the
 Root-siteName.txt file.
 
 5) Your Bing account key (so we can test your project)
-L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw
+pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0
+L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw (this one might have hit the quota)
 
 6) Any additional information that you consider significant 
 We restricted t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
