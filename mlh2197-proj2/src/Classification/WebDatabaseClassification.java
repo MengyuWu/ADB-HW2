@@ -83,16 +83,12 @@ public class WebDatabaseClassification {
 
 	public static TreeMap<String,Long> getSummary(String category) {
 		if (category.equals("Root")) {
-			System.out.println("Writing to root summary.");
 			return rootSummary;
 		} else if (category.equals("Computers")) {
-			System.out.println("Writing to computers summary.");
 			return computerSummary;
 		} else if (category.equals("Health")) {
-			System.out.println("Writing to health summary.");
 			return healthSummary;
 		} else if (category.equals("Sports")) {
-			System.out.println("Writing to sports summary.");
 			return sportsSummary;
 		} else {
 			return summary;
@@ -217,17 +213,13 @@ public class WebDatabaseClassification {
 		}
 	}
 
-	public static void generateSummary(String category, TreeSet<String> currentSet, TreeMap<String,Long> summary) {
-		for (String url:currentSet) {
-			//System.out.println("URL: " + url);
-			TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
-			for(String w:set){ // take a count of each word in the set
-		   		if(summary.containsKey(w)){
-		    		long count=summary.get(w);
-		    		summary.put(w,count+1);
-		    	} else{
-		    		summary.put(w,(long)1);
-		   		}
+	// Merge two treeSets (root w/ one of its subcategories)
+	public static void mergeSet(TreeSet<String> other) {
+		for (String url:other) {
+			System.out.println("url: " + url);
+			if (!rootSample.contains(url)) {
+				rootSample.add(url);
+				System.out.println("Added new url to root: " + url);
 			}
 		}
 	}
@@ -287,14 +279,16 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 
 		String category=classify(root,site, tc,ts,1);
-		/*System.out.println("Root:");
-		System.out.println(rootSample);
-		System.out.println("RootComputers:");
-		System.out.println(rootComputerSample);
-		System.out.println("RootSports:");
-		System.out.println(rootSportsSample);
-		System.out.println("RootHealth:");
-		System.out.println(rootHealthSample);*/
+		if (category.contains("Computers")) {
+			System.out.println("Merge root & computers");
+			mergeSet(computerSample);
+		} else if (category.contains("Health")) {
+			System.out.println("Merge root & health");
+			mergeSet(healthSample);
+		} else if (category.contains("Sports")) {
+			System.out.println("Merge root and sports");
+			mergeSet(sportsSample);
+		}
 
 		String[] categories = category.split("/");
 		for (int i = 0; i < categories.length; i++) {
@@ -314,36 +308,14 @@ public class WebDatabaseClassification {
 			}
 			filename += mainCategory+"-"+site+".txt";
 			System.out.println("Generating: " + filename);
-			/*if (!currentCategory.equals("Root")) {
-				try {
-					generateSummary(mainCategory);
-					outputSummary(getSummary(mainCategory), filename); // output the summary to the text file
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			} else {
-				try {
-					if (category.contains("Computers")) {
-						generateSummary(mainCategory, rootComputerSample, rootComputerSummary);
-						outputSummary(rootComputerSummary, filename);
-					} else if (category.contains("Health")) {
-						generateSummary(mainCategory, rootHealthSample, rootHealthSummary);
-						outputSummary(rootHealthSummary, filename);
-					} else if (category.contains("Sports")) {
-						generateSummary(mainCategory, rootSportsSample, rootSportsSummary);
-						outputSummary(rootSportsSummary, filename);
-					} else {
-						generateSummary(mainCategory, rootSample, rootSummary);
-						outputSummary(rootSummary, filename);
-					}
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}*/
+			try {
+				generateSummary(mainCategory);
+				outputSummary(getSummary(mainCategory), filename); // output the summary to the text file
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} 
 		}
 		System.out.println(site+" "+category); // Final output
 	}
