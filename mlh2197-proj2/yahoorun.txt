@@ -1,0 +1,863 @@
+Buildfile: /home/mlh2197/ADB-HW2/mlh2197-proj2/build.xml
+
+WebDatabaseClassification:
+     [java] QUERY: [cpu]
+     [java] Getting page: http://finance.yahoo.com/q?s=cpu.ax
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/lookup?s=cpu
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20091208111728AA2GcNq
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080322011746AAi041M
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [java]
+     [java] Getting page: http://finance.yahoo.com/q?s=JAVA
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://developer.yahoo.com/java/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/q/ks?s=JAVA
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20060916003515AAMaCBa
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [module]
+     [java] Getting page: https://developer.yahoo.com/ypatterns/richinteraction/dragdrop/modules.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://developer.yahoo.com/ypatterns/navigation/tabs/moduletabs.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090716123126AAmPA7Z
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080408182520AAVMQsZ
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [multimedia]
+     [java] Getting page: https://shopping.yahoo.com/design-multimedia-software/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071104054152AAo6s4D
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://biz.yahoo.com/ic/820.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://shopping.yahoo.com/best-multimedia-suite--shop/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [perl]
+     [java] Getting page: http://finance.yahoo.com/q?s=perl
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://groups.yahoo.com/neo/groups/modperl/conversations/topics/51471
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090329205708AAc8oDc
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070328034601AATFvWA
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [vb]
+     [java] Getting page: http://finance.yahoo.com/q?s=VB
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://developer.yahoo.com/dotnet/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://developer.yahoo.com/dotnet/howto-xml_vb.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090311053401AArXEjJ
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [agp card]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20060929102412AAwr7w8
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090430152201AAmffLq
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090106200708AAHCZnT
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20111104053804AAUyzdt
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [application windows]
+     [java] Getting page: https://www.yahoo.com/tech/how-to-control-and-disable-startup-applications-in-78750692776.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://downloads.yahoo.com/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090320031059AA3mePb
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/news/outrage-over-popular-app-highlights-234328495.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [applet code]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080711003842AAEFK57
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20120129125342AAFRYM7
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20120508034125AAwVGHK
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070510070402AARPiQT
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [array code]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080611215537AArELdO
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090407222344AAjwOXI
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080404114642AAmF68Y
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20100308003753AAYIkbc
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [audio file]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080527084531AAIFIPq
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20100725230023AAyRpnu
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20101117162641AAiNIXS
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080211221725AATt2Dc
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [avi file]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090531080135AARR76l
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070626082338AA05fUC
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20100122163237AAFTApW
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090214153908AA2JtMp
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [bios]
+     [java] Getting page: http://finance.yahoo.com/q?s=bios
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/echarts?s=BIOS+Interactive
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/q/pr?s=BIOS+Profile
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/q/it?s=bios
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [buffer code]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080917115709AAYElTy
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20110314060202AAVLQLI
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071003182151AAT8jFR
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090112030247AAU953R
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [bytes code]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20100930085935AAZsDSv
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20091123202509AA7VGfQ
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://uk.answers.yahoo.com/question/index?qid=20101128101116AA5y8Oo
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20091013084139AAAuaGz
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [shareware]
+     [java] Getting page: https://business.yahoo.com/Business_and_Economy/companies/computers/software/games/shareware/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20060723064021AAijOiz
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070406084528AAIOOYm
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20061111192846AARzbbU
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [card drivers]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20101124181322AA4UROO
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071119181803AAU0Lfa
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20120907172628AAOKq1Y
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20081020073015AAOpaGV
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [card graphics]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090112060057AA6qStK
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070425215735AABHvIW
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20151030110833AATzzLO
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080407183539AAhp2fo
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [card pc]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080501200041AAogRXV
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080626201341AAs32uf
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20061024063309AAAQIWn
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090902221641AAa4w9L
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [pc windows]
+     [java] Getting page: https://shopping.yahoo.com/windows-pc--shop/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://messenger.yahoo.com/win
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20130107160649AAOSuQc
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20151103151443AA0Xu5p
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [acupuncture]
+     [java] Getting page: https://screen.yahoo.com/acupuncture-000000104.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070709200158AARYCNE
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-41637767-acupuncture-points-oak-park
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080601215158AA2viTx
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [aerobic]
+     [java] Getting page: https://local.yahoo.com/info-12313437-aerobic-rhythmics-collegeville
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/combining-aerobic-resistance-exercise-may-best-diabetes-144233663.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080506211828AAOD7Ls
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080303201710AAv3JPq
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [aerobics]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070421181210AAdYDrq
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080430072046AAwBMpP
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080518040641AAlGQD2
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090613093308AAhu7n1
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [aids]
+     [java] Getting page: http://news.yahoo.com/topics/hiv-aids/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/the-sex-accessories-that-gynecologists-love-102954359887.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080115101423AAmVNF8
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/scientists-mechanism-spontaneous-hiv-cure-111655252.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [cancer]
+     [java] Getting page: http://news.yahoo.com/topics/cancer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://celebrity.yahoo.com/horoscope/cancer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/dir/index?sid=396545116
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/17-red-flag-signs-of-cancer-110161560812.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [cardiology]
+     [java] Getting page: https://local.yahoo.com/info-27753689-clarence-cardiology-llc-clarence
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-20659768-cardiology-consultants-medical-tarzana
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-42214510-berkshire-cardiology-pittsfield
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/news/cardiology-product-potential-clinical-trial-115157544.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [cholesterol]
+     [java] Getting page: https://www.yahoo.com/health/cholesterol-fat-salt-making-comeback-but-110717999167.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/cholesterol-no-longer-concern-us-experts-205548731.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/sanofi-cholesterol-drug-touted-potential-3-billion-blockbuster-155302519--finance.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/cholesterol-linked-alzheimer-39-protein-unclear-why-161637240.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [diabetes]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070828041620AAmYalb
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/dir/index?sid=396545384
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20081001203348AA0hNHy
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090621225212AAYDBXI
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [diet]
+     [java] Getting page: https://www.yahoo.com/health/meet-the-mind-diet-it-slashes-alzheimers-risk-113985079792.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/11-diet-foods-that-make-you-fat-91955213282.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/the-dash-diet-is-the-best-diet-in-america-so-why-107415088427.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/the-best-diets-for-seniors-108766401118.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [fitness]
+     [java] Getting page: https://www.yahoo.com/health/tagged/fitness
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/?ref=shine
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/the-1-fitness-trend-of-2015-119451575023.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/tech/22-fitness-bands-and-the-battle-for-your-wrist-the-119529868834.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [hiv]
+     [java] Getting page: http://news.yahoo.com/scientists-mechanism-spontaneous-hiv-cure-111655252.html
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/the-puzzling-link-between-hiv-diagnoses-and-109987894272.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071206220353AAVFSoz
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/topics/hiv-aids/
+     [java] Writing to root sample.
+     [java] QUERY: [insulin]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20061220172015AAacJNc
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070211160105AA0bar6
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090924152105AARc33g
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080707174736AAfA1QE
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [nurse]
+     [java] Getting page: http://news.yahoo.com/ebola-diagnosed-in-second-dallas-nurse-105542930.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080114120617AADVshI
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/nina-pham-identified-as-dallas-nurse-with-ebola-165521689.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/doctor-gives-blood-ebola-infected-dallas-nurse-050231595.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [squats]
+     [java] Getting page: https://www.yahoo.com/health/6-ways-youre-doing-squats-wrong-91154630467.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080417182050AAg9m7i
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080414140014AADBS5D
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080519115727AAcBjfU
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [treadmill]
+     [java] Getting page: https://shopping.yahoo.com/treadmills/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://shopping.yahoo.com/treadmills/proform--brand/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://shopping.yahoo.com/treadmills/nordictrack--brand/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://shopping.yahoo.com/treadmills/image--brand/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [walkers]
+     [java] Getting page: https://www.yahoo.com/movies/fast-furious-7-set-pics-paul-walkers-brother-86413947277.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://shopping.yahoo.com/nova-walkers--shop/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20120425162700AAeiF0Y
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/tv/bp/-the-walking-dead--stunner--flowers-for-lizzie-040623216.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [calories fat]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080730092058AAWx8ZW
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070926191710AA2LHv3
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071125142007AAHlCz8
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070719091343AAFNhyc
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [carb carbs]
+     [java] Getting page: http://finance.yahoo.com/q?s=CARB
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/food/should-you-try-lebrons-low-carb-diet-98333804253.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/low-carb-diets-may-beat-low-fat-options-for-weight-96452625427.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20100302171534AAUo87p
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [doctor health]
+     [java] Getting page: http://news.yahoo.com/keep-doctor-health-plan-132631002.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://gma.yahoo.com/health/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/dr-oz-defends-medical-advice-after-peers-call-for-116580311342.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-38908232-doctors-health-center-ringgold
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [doctor medical]
+     [java] Getting page: https://local.yahoo.com/info-20869018-call-doctor-medical-group-san-diego
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-21665559-doctors-medical-center-modesto
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20070409155405AAFpLgC
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/CO/Thornton/Health+Beauty/Doctors+Clinics/Doctors+Clinics
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [eating fat]
+     [java] Getting page: https://www.yahoo.com/health/8-signs-youre-not-eating-enough-fat-100244498228.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/cholesterol-fat-salt-making-comeback-but-110717999167.html
+     [java] Writing to root sample.
+     [java] Getting page: https://uk.answers.yahoo.com/question/index?qid=20070310011025AAFuwPN
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20151101160207AAVtA6k
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [fat muscle]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080525134215AA1tQch
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20060826173453AAJ5wlB
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090115225057AADd9XS
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080420203307AAYgJzb
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [health medicine]
+     [java] Getting page: https://www.yahoo.com/health
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/health/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/massage-as-medicine-111316482388.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/dir/index?sid=396545018
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [health nutritional]
+     [java] Getting page: https://www.yahoo.com/health/tagged/nutrition
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health/the-10-best-nutrition-tips-ever-101706257283.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-18343206-nutritional-sports-health-conway
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://www.yahoo.com/health
+     [java] Writing to root sample.
+     [java] QUERY: [hospital medical]
+     [java] Getting page: https://local.yahoo.com/info-19509981-medical-ctr-hospital-odessa
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-17393699-mercy-hospital-medical-center-chicago?csz=Chicago%2C%20IL%2060608
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-17366370-rush-university-medical-center-hospital-chicago?csz=Chicago%2C+IL
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-13897740-medical-center-hospital-columbus?csz=Columbus%2C+GA
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [hospital patients]
+     [java] Getting page: https://local.yahoo.com/info-42291867-patients-medical-center-pasadena
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/patients-shot-hospital-beds-horrific-sudan-civil-war-072036621.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/news/hospitals-overcharge-patients-1000-200000888.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/pet-therapy-hospitals-allow-patients-own-dogs-visit-230142986--abc-news-wellness.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [medical patient]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20061226042419AAn00W0
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080125135647AA7ierF
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20100223195109AAtU3lw
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-42291867-patients-medical-center-pasadena
+     [java] Writing to root sample.
+     [java] QUERY: [medical treatment]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080608053155AAAoE7r
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080424051017AA2GZZL
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/news/whistleblower-report-exposes-wsib-interference-151500852.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071109141733AAnOWpX
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [patients treatment]
+     [java] Getting page: http://news.yahoo.com/dialysis-proceed-indigent-ga-patients.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://finance.yahoo.com/news/first-patient-treatment-cyberknife-m6-123000674.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080104164305AA1Ep0V
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://sg.answers.yahoo.com/question/index?qid=20100314202447AAGjoKE
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [laker]
+     [java] Getting page: http://sports.yahoo.com/nba/teams/lal/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nba-ball-dont-lie/laker-boss-jim-buss-is-happy-his-team-has--turned-the-corner-211707125.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nba-ball-dont-lie/former-laker-camp-invitee-recalls-the-time-he-was-torn-to-bits-by-kobe-bryant-in-practice-000343433.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071116033034AAgAe1i
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ncaa]
+     [java] Getting page: http://sports.yahoo.com/college-basketball/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/college-football/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/college-basketball/bracket/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/ncaa/basketball/standings
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [pacers]
+     [java] Getting page: http://sports.yahoo.com/nba/teams/ind/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/news/heat-pacers-preview-033432236--nba.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/news/george-suffers-serious-leg-injury-025835412--nba.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nba-ball-dont-lie/nba--pacers-issue-joint-statement-against-indiana--religious-freedom--law-001815162.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [soccer]
+     [java] Getting page: http://sports.yahoo.com/soccer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/soccer/mls/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.yahoo.com/soccer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/soccer/mls/scoreboard/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [teams]
+     [java] Getting page: http://sports.yahoo.com/ncaa/football/teams
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/nba/teams/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/mlb/teams/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/ncaa/basketball/teams
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [wnba]
+     [java] Getting page: http://sports.yahoo.com/wnba/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/wnba/rss.xml
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/wnba/teams/los/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/wnba/teams/min/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [nba]
+     [java] Getting page: http://sports.yahoo.com/nba/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/nba/players
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/nba/stats
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://basketball.fantasysports.yahoo.com/nba
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [avg league]
+     [java] Getting page: http://sports.yahoo.com/mlb/stats/byposition
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20080603163824AAZO2EH
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/mlb/stats/byteam?cat=Overall&sort=722
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/mlb/stats/bycategory?cat=Batting&conference=NL&sort=22
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [avg nba]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090323174528AAUHjUQ
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071022170309AAQmTAY
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20121211190905AACdbkm
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090110183311AAY1uPm
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ball league]
+     [java] Getting page: http://baseball.fantasysports.yahoo.com/b1/8708/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-39752850-ball-jeffrey-w-dds-jeffrey-w-ball-pc-league-city
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://baseball.fantasysports.yahoo.com/b1/25509
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://baseball.fantasysports.yahoo.com/b1/66261
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ball referee]
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20090529090234AAKSeLK
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://uk.answers.yahoo.com/question/index?qid=20080817100419AA6YRCA
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://uk.answers.yahoo.com/question/index?qid=20080817033818AASoRPp
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nba-ball-dont-lie/the-nba-s-referee-review-policy-claims-its-first-victim--j-j--redick-s-wallet-221545827.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ball team]
+     [java] Getting page: http://sports.yahoo.com/ncaa/basketball/teams
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/ncaa/football/teams
+     [java] Writing to root sample.
+     [java] Getting page: https://gma.yahoo.com/girl-t-ball-team-hits-home-run-frozen-182326721--abc-news-parenting.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://baseball.fantasysports.yahoo.com/b1/105585/1/team?date=2015-09-28&week=25
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [blazers game]
+     [java] Getting page: http://sports.yahoo.com/nba/teams/por/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://games.yahoo.com/game/word-roundup-trailblazer.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nba-ball-dont-lie/westboro-baptist-church-to-protest-outside-blazers-game-saturday-200855373.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/news/sources--nba-postpones-blazers-nets-game-163427253.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [championship team]
+     [java] Getting page: http://sports.yahoo.com/news/chicagos-little-league-championship-team-stripped-title-142348967--spt.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/soccer/championship/teams/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://uk.sports.yahoo.com/football/championship/teams/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://uk.sports.yahoo.com/13012012/58/championship-team-news-sharp-set-play.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [club league]
+     [java] Getting page: https://local.yahoo.com/info-42303705-tutoring-club-league-city
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://local.yahoo.com/info-11075228-union-league-club-new-york
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/soccer/teams/athletic-club/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/soccer/champions-league/club-brugge-manchester-united-51106/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [fans football]
+     [java] Getting page: http://football.fantasysports.yahoo.com/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20071214033507AAArj7g
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nfl-shutdown-corner/team-most-loyal-fans-science-says-dallas-cowboys-171057776.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/nfl-shutdown-corner/classy-saints-fan-steals-football-meant-for-female-bengals-fan-200638811.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [game league]
+     [java] Getting page: https://games.yahoo.com/game/league-of-angels.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://baseball.fantasysports.yahoo.com/league/gameofthrones2015
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: https://answers.yahoo.com/question/index?qid=20101102214535AAUf6GT
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://sports.yahoo.com/blogs/mlb-big-league-stew/nlcs-game-3--mets-cubs-postseason-014730184.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] subCategory:Computers coverage:6593650 specificity:0.21418420364496288
+     [java] subCategory:Health coverage:11068300 specificity:0.3595360720092123
+     [java] subCategory:Sports coverage:13123000 specificity:0.42627972434582484
+     [java] Generating: Root-yahoo.com.txt
+     [java] Writing to root sample.
+     [java] yahoo.com Root
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 56 seconds

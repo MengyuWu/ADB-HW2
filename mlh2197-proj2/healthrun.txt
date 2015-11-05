@@ -1,0 +1,1263 @@
+Buildfile: /home/mlh2197/ADB-HW2/mlh2197-proj2/build.xml
+
+WebDatabaseClassification:
+     [java] QUERY: [cpu]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20454528,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [java]
+     [java] Getting page: http://news.health.com/2015/03/27/what-is-matcha/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/07/some-people-are-born-java-junkies-study-suggests/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20478472,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/03/06/how-much-coffee-is-healthy/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [module]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20389399,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/calendar/0,,20562102,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/calendar/0,,20486395,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/calendar/0,,20752588,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [multimedia]
+     [java] Getting page: http://news.health.com/2015/04/26/very-young-kids-often-use-tablets-smartphones-study-finds/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/10/todays-teens-can-be-adept-multitaskers-study-suggests/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2013/11/07/5-alzheimers-myths-you-probably-believe/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2010/01/20/u-s-kids-using-media-almost-8-hours-day/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [perl]
+     [java] Getting page: http://news.health.com/2015/03/11/bird-flu-spreads-across-china-posing-threat-to-people-report/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2013/09/03/hospital-acquired-infections-cost-10-billion-a-year-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2011/04/21/higher-death-rates-seen-in-central-line-dialysis-patients-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2009/11/17/u-s-scores-d-preterm-birth-report-card/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [vb]
+     [java] Getting page: http://news.health.com/2015/09/28/got-bitchy-resting-face-fear-not-you-may-be-a-great-communicator/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20189855,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0%2C%2C20189154%2C00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20306955,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [agp card]
+     [java] QUERY: [application windows]
+     [java] Getting page: http://news.health.com/2014/09/09/7-cool-things-the-new-iphone-health-app-can-do/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://subscription-assets.health.com/prod/assets/themes/magazines/default/template-resources/html/HA/allaccess/learnmore.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20292425,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20506099,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [applet code]
+     [java] QUERY: [array code]
+     [java] Getting page: http://news.health.com/2015/09/03/research-spots-link-between-agent-orange-blood-cancer-in-vietnam-vets/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/11/14/new-york-city-is-getting-a-permanent-cat-cafe-with-adoptable-kitties/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2012/03/23/study-might-explain-brain-overgrowth-seen-in-autism/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [audio file]
+     [java] Getting page: http://news.health.com/2011/01/21/study-suggests-how-music-fools-the-ear/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2010/06/22/mp3-players-might-harm-hearing/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/static/advertise-digital/pdfs/FullMediaKit.pdf
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [avi file]
+     [java] QUERY: [bios]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20307117,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20411567,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20411769,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20411805,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [buffer code]
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to root sample.
+     [java] QUERY: [bytes code]
+     [java] Getting page: http://www.health.com/health/article/0,,20803468_2,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20366671,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [shareware]
+     [java] QUERY: [card drivers]
+     [java] Getting page: http://news.health.com/2015/07/27/what-this-mom-with-terminal-cancer-is-leaving-behind-for-her-daughter-will-melt-your-heart/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/05/18/17-celebrities-explain-why-getting-older-is-actually-awesome/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/29/8-tips-for-surviving-a-zombie-apocalypse/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2013/11/01/u-s-preemie-birth-rate-continues-to-fall-report/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [card graphics]
+     [java] Getting page: http://news.health.com/2014/05/01/in-sickness-and-in-health-isnt-in-the-cards-for-many-women/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20718479,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20706008,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/09/09/7-cool-things-the-new-iphone-health-app-can-do/
+     [java] Writing to root sample.
+     [java] QUERY: [card pc]
+     [java] Getting page: http://news.health.com/2015/06/18/fda-seizes-counterfeit-drugs-devices-sold-online/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/09/09/7-cool-things-the-new-iphone-health-app-can-do/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/11/05/starbucks-delivery-service/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/13/how-to-beat-buzzkill-all-day-long/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [pc windows]
+     [java] Getting page: http://subscription-assets.health.com/prod/assets/themes/magazines/default/template-resources/html/HA/allaccess/learnmore.html
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/06/08/5-non-diet-ways-to-trick-yourself-into-losing-weight/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20411080,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20307345,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [acupuncture]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20189570,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/08/25/acupuncture-best-for-hot-flashes-in-breast-cancer-survivors-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20307043,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/09/02/acupuncture-might-help-ease-high-blood-pressure/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [aerobic]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20436269_11,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20306919,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/06/11/aerobic-exercise-can-help-curb-asthma-study-shows/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/05/13/get-fit-quick-with-this-10-minute-step-workout/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [aerobics]
+     [java] Getting page: http://www.health.com/health/step-exercises
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20306919,00.html
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/05/13/get-fit-quick-with-this-10-minute-step-workout/
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20436269_11,00.html
+     [java] Writing to root sample.
+     [java] QUERY: [aids]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20539037,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/tag/aids/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/04/29/experimental-aids-vaccine-targets-hidden-virus/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/hiv
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [cancer]
+     [java] Getting page: http://www.health.com/health/breast-cancer
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/tag/cancer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20544048,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/prostate-cancer
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [cardiology]
+     [java] Getting page: http://news.health.com/2015/08/31/cold-weather-may-up-risk-of-stroke-severe-heart-attack-for-some/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/08/31/could-lots-of-coffee-up-heart-risks-for-young-adults-with-high-blood-pressure/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/03/31/heart-groups-issue-updated-blood-pressure-guidelines/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/08/12/moderate-exercise-may-reduce-mens-heart-failure-risk/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [cholesterol]
+     [java] Getting page: http://www.health.com/health/cholesterol
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/02/23/5-things-you-should-know-about-cholesterol/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20221105,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20552005,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [diabetes]
+     [java] Getting page: http://www.health.com/health/diabetes2
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20442821,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/diabetes1
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition/diabetes2/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [diet]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20645166,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/lose-weight/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/diet-fitness/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20793870,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [fitness]
+     [java] Getting page: http://www.health.com/health/diet-fitness/
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20513624,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/fitness-finder
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [hiv]
+     [java] Getting page: http://www.health.com/health/hiv
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/tag/hiv/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20539037,00.html
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/thumbnails/0,,20539037,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [insulin]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20402402,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20431957,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20187810,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20432371_2,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [nurse]
+     [java] Getting page: http://news.health.com/2015/08/25/stacie-reis-nurse-sets-broken-legs-car-crash/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/09/16/the-view-miss-america-kelley-johnson-nurses-unite/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2013/05/15/doctors-reluctant-to-expand-nurse-practitioners-role-survey/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/10/12/doctors-nurse-practitioners-offer-comparable-outpatient-heart-care-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [squats]
+     [java] Getting page: http://www.health.com/health/squats
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/07/02/how-to-do-the-perfect-squat/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/07/25/move-of-the-week-dumbbell-squat/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/06/25/move-of-week-sumo-jump-squats/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [treadmill]
+     [java] Getting page: http://news.health.com/2015/01/02/7-ways-to-make-your-treadmill-runs-more-effective/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/04/14/the-pros-and-cons-of-running-on-the-treadmill/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/wp/0,,20520822,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/05/06/4-things-you-should-know-about-treadmill-safety/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [walkers]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20680036,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/05/06/more-aging-americans-using-canes-walkers/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2013/04/04/brisk-walking-equals-running-for-heart-health-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20411639,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [calories fat]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20640804,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20420506,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20534096,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/09/21/the-best-low-impact-workouts-that-burn-the-most-calories/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [carb carbs]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20815445,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20432882,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20361484,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20814463,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [doctor health]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20188006,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20854499,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/08/16/doctor-offers-back-to-school-health-tips/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [doctor medical]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20188006,00.html
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20187802,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20959568,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20834752,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [eating fat]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20582466,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20307221,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/01/26/working-out-and-still-not-losing-weight-here-are-7-reasons-why/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20807507,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [fat muscle]
+     [java] Getting page: http://news.health.com/2013/09/17/do-you-want-to-change-fat-to-muscle/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/15/how-to-shed-fat-with-strength-training/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/02/26/4-fat-burning-pre-workout-snacks/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20307261,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [health medicine]
+     [java] Getting page: http://www.health.com/health/diseases-conditions
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/medicine-ball-workouts
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [health nutritional]
+     [java] Getting page: http://www.health.com/health/nutrition
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/package/0,,20392629,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20886500,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [hospital medical]
+     [java] Getting page: http://www.health.com/health/article/0,,20456475,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20960758,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/02/19/2-deaths-scores-of-potential-superbug-infections-at-ucla-med-center/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/tag/hospitals/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [hospital patients]
+     [java] Getting page: http://news.health.com/2015/06/23/many-hospital-patients-not-asked-about-supplements-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/02/02/non-drug-options-can-help-curb-delirium-in-hospital-patients-study-finds/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2013/07/01/waking-hospital-patients-to-check-vital-signs-may-do-more-harm-than-good/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/09/study-finds-hospital-patients-dont-wash-their-hands-enough/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [medical patient]
+     [java] Getting page: http://www.health.com/health/diseases-conditions
+     [java] Writing to root sample.
+     [java] Getting page: https://news.health.com/2015/10/20/stereotypes-can-hurt-a-patients-care/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/10/15/vaccines-rarely-cause-life-threatening-allergic-reactions-cdc/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/heart-disease
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [medical treatment]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20526272,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/02/20/fda-oks-new-varicose-vein-treatment/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/01/07/a-17-year-old-forced-to-get-chemo-takes-her-state-to-court/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gout
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [patients treatment]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20475967,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/01/11/many-with-hepatitis-c-missing-out-on-treatment-study-finds/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/01/26/many-breast-cancer-patients-lack-info-on-their-cancer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20224439,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [laker]
+     [java] QUERY: [ncaa]
+     [java] Getting page: http://news.health.com/2014/03/21/basketballs-fitness-benefits-a-sure-bet/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/04/07/lauren-hill-college-basketball-player-with-brain-tumor/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/03/24/this-march-madness-bracket-full-of-cat-gifs-is-meant-to-promote-health-insurance/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/02/12/watch-incredible-footage-of-what-a-pole-vaulter-sees-while-flying-through-the-air/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [pacers]
+     [java] QUERY: [soccer]
+     [java] Getting page: http://news.health.com/2015/07/13/banning-soccer-headers-wont-solve-concussion-problem-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/tag/soccer/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20938047_10,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/06/16/world-cup-fitness-by-the-numbers/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [teams]
+     [java] Getting page: http://news.health.com/2015/02/13/rules-for-post-workout-meals/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20188320,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/09/14/football-fans-may-overestimate-chances-of-favorite-nfl-team/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/11/14/what-you-need-to-know-about-the-mumps-outbreak-in-the-nhl/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [wnba]
+     [java] Getting page: http://www.health.com/health/article/0,,20951624,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/07/07/10-best-body-positive-quotes-from-the-female-athletes-who-posed-nude-for-espn/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/07/08/why-are-pro-female-athletes-paid-so-much-less-than-their-male-counterparts/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20306639,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [nba]
+     [java] Getting page: http://news.health.com/2015/04/23/meet-bongo-lady-a-mississippi-mom-basketball-fan-and-internet-sensation/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20306639,00.html
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/05/21/stephen-curry-daughter/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2009/05/26/nfl-football-players-have-good-news-bad-news-in-heart-health-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [avg league]
+     [java] QUERY: [avg nba]
+     [java] Getting page: http://news.health.com/2015/07/08/why-are-pro-female-athletes-paid-so-much-less-than-their-male-counterparts/
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/diet-fitness/
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20526304,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2012/10/08/whats-the-best-workout-for-weight-loss/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ball league]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20428686,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/07/17/little-league-shoulder-on-the-rise/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/08/17/protective-eyewear-in-girls-field-hockey-means-fewer-injuries/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/09/25/catcher-injuries-arent-usually-the-result-of-collisions/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ball referee]
+     [java] Getting page: http://news.health.com/2014/06/16/world-cup-fitness-by-the-numbers/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/07/13/banning-soccer-headers-wont-solve-concussion-problem-study/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2012/04/20/catastrophic-head-injuries-to-high-school-football-players-rising/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/17/who-admits-botched-response-to-ebola-in-africa/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [ball team]
+     [java] Getting page: http://news.health.com/2015/05/21/stephen-curry-daughter/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/tag/team-sports/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/06/23/this-hilarious-video-by-norways-womens-soccer-team-slams-sexist-stereotypes/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/07/01/ali-krieger-womens-world-cup-blood-clot/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [blazers game]
+     [java] Getting page: http://news.health.com/2015/04/14/to-protect-your-aging-brain-start-with-exercise/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [championship team]
+     [java] Getting page: http://news.health.com/2015/04/28/ex-baseball-star-kirk-gibson-has-parkinsons-disease/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/10/14/north-american-wife-carrying-championship-2014/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/07/28/arizona-cardinals-jen-welter-first-female-coach/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/07/29/what-5-champions-eat-for-breakfast/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [club league]
+     [java] Getting page: http://news.health.com/2014/07/18/german-soccer-player-donates-world-cup-prize-money-to-sick-kids-in-brazil/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20523821,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/09/19/derek-jeter-made-in-new-york/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20411981,00.html
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [fans football]
+     [java] Getting page: http://news.health.com/2015/09/14/football-fans-may-overestimate-chances-of-favorite-nfl-team/
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/01/30/study-suggests-early-start-to-football-may-pose-brain-risks/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2014/08/22/5-over-the-top-football-stadium-foods/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/08/21/preteen-football-tied-to-brain-changes-in-retired-nfl-players-study/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] QUERY: [game league]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20428686,00.html
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/03/23/superstar-little-league-pitcher-mone-davis-designed-sneakers-to-help-impoverished-girls/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/04/03/faster-taller-youth-league-pitchers-may-face-greater-risk-of-injury/
+     [java] Writing to root sample.
+     [java] Writing to root sample.
+     [java] Getting page: http://news.health.com/2015/04/28/ex-baseball-star-kirk-gibson-has-parkinsons-disease/
+     [java] Writing to root sample.
+     [java] subCategory:Computers coverage:216 specificity:4.9789592868655056E-5
+     [java] subCategory:Health coverage:4300552 specificity:0.991308949955927
+     [java] QUERY: [aerobic ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20436269_11,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20306919,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/06/11/aerobic-exercise-can-help-curb-asthma-study-shows/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2014/05/13/get-fit-quick-with-this-10-minute-step-workout/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [fat ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20807507,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20899063,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20477647,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20553780,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [fitness ]
+     [java] Getting page: http://www.health.com/health/diet-fitness/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20513624,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/fitness-finder
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [walking ]
+     [java] Getting page: http://www.health.com/health/article/0,,20680533,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20579759,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20680036,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20432121,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [workout ]
+     [java] Getting page: http://www.health.com/health/cardio-workouts/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20664616,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/fitness-finder
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/diet-fitness/
+     [java] Writing to health sample.
+     [java] QUERY: [acid diets ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20443643,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/02/13/meat-heavy-high-acid-diet-poses-risk-for-those-with-kidney-disease-study/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20440834,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/thumbnails/0,,20443643,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [bodybuilding protein ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20855303,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2013/05/13/5-protein-pancake-recipes-from-food-and-fitness-bloggers/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20692801,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/08/07/bodybuilder-supplement-abuse-a-growing-concern/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [calories protein ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20692801,00.html
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20358907,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20855303,00.html
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20718479,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [calories weight ]
+     [java] Getting page: http://www.health.com/health/video/0,,20918897,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20454528,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20670897,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20911507,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [challenge walk ]
+     [java] Getting page: http://www.health.com/health/article/0,,20815840,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20680533,00.html
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2014/11/24/jogging-may-help-seniors-walk-better/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20680533_2,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [dairy milk ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20845429,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20307105,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/05/15/should-you-be-drinking-milk/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2014/07/30/how-to-make-your-own-almond-milk/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [eating protein ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20855303,00.html
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20585485,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20718479,00.html
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2014/05/23/consistent-protein-intake-key-to-muscle-strength-study-says/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [eating weight ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20390232,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/lose-weight/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/article/0,,20899056,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20645166,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [exercise protein ]
+     [java] Getting page: http://www.health.com/health/recipe/0,,50400000118663,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/02/13/rules-for-post-workout-meals/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20610016,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/fitness-finder
+     [java] Writing to health sample.
+     [java] QUERY: [exercise weight ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20366277,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/01/26/working-out-and-still-not-losing-weight-here-are-7-reasons-why/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20187807,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/lose-weight/
+     [java] Writing to health sample.
+     [java] QUERY: [aids ]
+     [java] Getting page: http://www.health.com/health/gallery/0,,20539037,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/tag/aids/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/04/29/experimental-aids-vaccine-targets-hidden-virus/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/hiv
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [cancer ]
+     [java] Getting page: http://www.health.com/health/breast-cancer
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/tag/cancer/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20544048,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/prostate-cancer
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [dental ]
+     [java] Getting page: http://www.health.com/health/dental-care
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/category/dental-care/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20956989,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20687551_10,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [diabetes ]
+     [java] Getting page: http://www.health.com/health/diabetes2
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20442821,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/diabetes1
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition/diabetes2/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [hiv ]
+     [java] Getting page: http://www.health.com/health/hiv
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/tag/hiv/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20539037,00.html
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/thumbnails/0,,20539037,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [cardiology ]
+     [java] Getting page: http://news.health.com/2015/08/31/cold-weather-may-up-risk-of-stroke-severe-heart-attack-for-some/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/08/31/could-lots-of-coffee-up-heart-risks-for-young-adults-with-high-blood-pressure/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/03/31/heart-groups-issue-updated-blood-pressure-guidelines/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/08/12/moderate-exercise-may-reduce-mens-heart-failure-risk/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [aspirin cardiologist ]
+     [java] Getting page: http://news.health.com/2014/04/01/aspirin-may-not-protect-heart-after-non-cardiac-surgeries-study/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2014/12/04/study-casts-doubt-on-low-dose-aspirin-for-women-under-65/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/07/16/aspirin-use-common-among-americans-with-heart-trouble/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/09/15/people-in-their-50s-benefit-most-from-low-dose-aspirin-report-says/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [aspirin cholesterol ]
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20221256,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/08/24/low-dose-aspirin-other-painkillers-may-lower-colon-cancer-risk/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/07/16/aspirin-use-common-among-americans-with-heart-trouble/
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20187875,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [blood heart ]
+     [java] Getting page: http://www.health.com/health/package/section/0,,20636505,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/02/17/newer-blood-thinner-beats-heparin-for-certain-heart-attacks/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20487696,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/heart-disease
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [blood insulin ]
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20187810,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2014/06/30/fda-approves-inhaled-diabetes-medication/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20390441,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20433424,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [cholesterol doctor ]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20218230,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/cholesterol
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20221255,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20218230_3,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [cholesterol lipitor ]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20189423,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/category/cholesterol/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/cholesterol
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/gallery/0,,20552165,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [heart surgery ]
+     [java] Getting page: http://www.health.com/health/condition-section/0,,20189512,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/08/31/knee-hip-replacement-surgeries-linked-to-heart-risks/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20189569,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://www.health.com/health/condition/heart-disease
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] QUERY: [radiation treatment ]
+     [java] Getting page: http://www.health.com/health/condition-article/0,,20188828,00.html
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/10/20/shorter-radiation-treatment-works-for-early-breast-cancers-study/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/02/17/too-few-breast-cancer-patients-getting-radiation-after-mastectomy-study/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] Getting page: http://news.health.com/2015/08/06/higher-dose-short-duration-radiation-better-for-early-breast-cancer-study/
+     [java] Writing to health sample.
+     [java] Writing to health sample.
+     [java] subCategory:Fitness coverage:2376000 specificity:0.6523376987105526
+     [java] subCategory:Diseases coverage:1234630 specificity:0.33897125124537436
+     [java] subCategory:Sports coverage:37488 specificity:0.008641260451204355
+     [java] Merge root & health
+     [java] url: http://news.health.com/2013/05/13/5-protein-pancake-recipes-from-food-and-fitness-bloggers/
+     [java] Added new url to root: http://news.health.com/2013/05/13/5-protein-pancake-recipes-from-food-and-fitness-bloggers/
+     [java] url: http://news.health.com/2014/04/01/aspirin-may-not-protect-heart-after-non-cardiac-surgeries-study/
+     [java] Added new url to root: http://news.health.com/2014/04/01/aspirin-may-not-protect-heart-after-non-cardiac-surgeries-study/
+     [java] url: http://news.health.com/2014/05/13/get-fit-quick-with-this-10-minute-step-workout/
+     [java] url: http://news.health.com/2014/05/23/consistent-protein-intake-key-to-muscle-strength-study-says/
+     [java] Added new url to root: http://news.health.com/2014/05/23/consistent-protein-intake-key-to-muscle-strength-study-says/
+     [java] url: http://news.health.com/2014/06/30/fda-approves-inhaled-diabetes-medication/
+     [java] Added new url to root: http://news.health.com/2014/06/30/fda-approves-inhaled-diabetes-medication/
+     [java] url: http://news.health.com/2014/07/30/how-to-make-your-own-almond-milk/
+     [java] Added new url to root: http://news.health.com/2014/07/30/how-to-make-your-own-almond-milk/
+     [java] url: http://news.health.com/2014/11/24/jogging-may-help-seniors-walk-better/
+     [java] Added new url to root: http://news.health.com/2014/11/24/jogging-may-help-seniors-walk-better/
+     [java] url: http://news.health.com/2014/12/04/study-casts-doubt-on-low-dose-aspirin-for-women-under-65/
+     [java] Added new url to root: http://news.health.com/2014/12/04/study-casts-doubt-on-low-dose-aspirin-for-women-under-65/
+     [java] url: http://news.health.com/2015/01/26/working-out-and-still-not-losing-weight-here-are-7-reasons-why/
+     [java] url: http://news.health.com/2015/02/13/meat-heavy-high-acid-diet-poses-risk-for-those-with-kidney-disease-study/
+     [java] Added new url to root: http://news.health.com/2015/02/13/meat-heavy-high-acid-diet-poses-risk-for-those-with-kidney-disease-study/
+     [java] url: http://news.health.com/2015/02/13/rules-for-post-workout-meals/
+     [java] url: http://news.health.com/2015/02/17/newer-blood-thinner-beats-heparin-for-certain-heart-attacks/
+     [java] Added new url to root: http://news.health.com/2015/02/17/newer-blood-thinner-beats-heparin-for-certain-heart-attacks/
+     [java] url: http://news.health.com/2015/02/17/too-few-breast-cancer-patients-getting-radiation-after-mastectomy-study/
+     [java] Added new url to root: http://news.health.com/2015/02/17/too-few-breast-cancer-patients-getting-radiation-after-mastectomy-study/
+     [java] url: http://news.health.com/2015/03/31/heart-groups-issue-updated-blood-pressure-guidelines/
+     [java] url: http://news.health.com/2015/04/29/experimental-aids-vaccine-targets-hidden-virus/
+     [java] url: http://news.health.com/2015/05/15/should-you-be-drinking-milk/
+     [java] Added new url to root: http://news.health.com/2015/05/15/should-you-be-drinking-milk/
+     [java] url: http://news.health.com/2015/06/11/aerobic-exercise-can-help-curb-asthma-study-shows/
+     [java] url: http://news.health.com/2015/07/16/aspirin-use-common-among-americans-with-heart-trouble/
+     [java] Added new url to root: http://news.health.com/2015/07/16/aspirin-use-common-among-americans-with-heart-trouble/
+     [java] url: http://news.health.com/2015/08/06/higher-dose-short-duration-radiation-better-for-early-breast-cancer-study/
+     [java] Added new url to root: http://news.health.com/2015/08/06/higher-dose-short-duration-radiation-better-for-early-breast-cancer-study/
+     [java] url: http://news.health.com/2015/08/07/bodybuilder-supplement-abuse-a-growing-concern/
+     [java] Added new url to root: http://news.health.com/2015/08/07/bodybuilder-supplement-abuse-a-growing-concern/
+     [java] url: http://news.health.com/2015/08/12/moderate-exercise-may-reduce-mens-heart-failure-risk/
+     [java] url: http://news.health.com/2015/08/24/low-dose-aspirin-other-painkillers-may-lower-colon-cancer-risk/
+     [java] Added new url to root: http://news.health.com/2015/08/24/low-dose-aspirin-other-painkillers-may-lower-colon-cancer-risk/
+     [java] url: http://news.health.com/2015/08/31/cold-weather-may-up-risk-of-stroke-severe-heart-attack-for-some/
+     [java] url: http://news.health.com/2015/08/31/could-lots-of-coffee-up-heart-risks-for-young-adults-with-high-blood-pressure/
+     [java] url: http://news.health.com/2015/08/31/knee-hip-replacement-surgeries-linked-to-heart-risks/
+     [java] Added new url to root: http://news.health.com/2015/08/31/knee-hip-replacement-surgeries-linked-to-heart-risks/
+     [java] url: http://news.health.com/2015/09/15/people-in-their-50s-benefit-most-from-low-dose-aspirin-report-says/
+     [java] Added new url to root: http://news.health.com/2015/09/15/people-in-their-50s-benefit-most-from-low-dose-aspirin-report-says/
+     [java] url: http://news.health.com/2015/10/20/shorter-radiation-treatment-works-for-early-breast-cancers-study/
+     [java] Added new url to root: http://news.health.com/2015/10/20/shorter-radiation-treatment-works-for-early-breast-cancers-study/
+     [java] url: http://news.health.com/category/cholesterol/
+     [java] Added new url to root: http://news.health.com/category/cholesterol/
+     [java] url: http://news.health.com/category/dental-care/
+     [java] Added new url to root: http://news.health.com/category/dental-care/
+     [java] url: http://news.health.com/tag/aids/
+     [java] url: http://news.health.com/tag/cancer/
+     [java] url: http://news.health.com/tag/hiv/
+     [java] url: http://www.health.com/health/
+     [java] url: http://www.health.com/health/article/0,,20670897,00.html
+     [java] Added new url to root: http://www.health.com/health/article/0,,20670897,00.html
+     [java] url: http://www.health.com/health/article/0,,20680533,00.html
+     [java] Added new url to root: http://www.health.com/health/article/0,,20680533,00.html
+     [java] url: http://www.health.com/health/article/0,,20680533_2,00.html
+     [java] Added new url to root: http://www.health.com/health/article/0,,20680533_2,00.html
+     [java] url: http://www.health.com/health/article/0,,20815840,00.html
+     [java] Added new url to root: http://www.health.com/health/article/0,,20815840,00.html
+     [java] url: http://www.health.com/health/article/0,,20899056,00.html
+     [java] Added new url to root: http://www.health.com/health/article/0,,20899056,00.html
+     [java] url: http://www.health.com/health/article/0,,20899063,00.html
+     [java] Added new url to root: http://www.health.com/health/article/0,,20899063,00.html
+     [java] url: http://www.health.com/health/breast-cancer
+     [java] url: http://www.health.com/health/cardio-workouts/
+     [java] Added new url to root: http://www.health.com/health/cardio-workouts/
+     [java] url: http://www.health.com/health/cholesterol
+     [java] url: http://www.health.com/health/condition-article/0,,20188828,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-article/0,,20188828,00.html
+     [java] url: http://www.health.com/health/condition-article/0,,20189423,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-article/0,,20189423,00.html
+     [java] url: http://www.health.com/health/condition-article/0,,20189569,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-article/0,,20189569,00.html
+     [java] url: http://www.health.com/health/condition-article/0,,20218230,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-article/0,,20218230,00.html
+     [java] url: http://www.health.com/health/condition-article/0,,20218230_3,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-article/0,,20218230_3,00.html
+     [java] url: http://www.health.com/health/condition-article/0,,20433424,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-article/0,,20433424,00.html
+     [java] url: http://www.health.com/health/condition-section/0,,20187807,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-section/0,,20187807,00.html
+     [java] url: http://www.health.com/health/condition-section/0,,20187810,00.html
+     [java] url: http://www.health.com/health/condition-section/0,,20187875,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-section/0,,20187875,00.html
+     [java] url: http://www.health.com/health/condition-section/0,,20189512,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-section/0,,20189512,00.html
+     [java] url: http://www.health.com/health/condition-section/0,,20221255,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-section/0,,20221255,00.html
+     [java] url: http://www.health.com/health/condition-section/0,,20221256,00.html
+     [java] Added new url to root: http://www.health.com/health/condition-section/0,,20221256,00.html
+     [java] url: http://www.health.com/health/condition/diabetes2/
+     [java] url: http://www.health.com/health/condition/heart-disease
+     [java] Added new url to root: http://www.health.com/health/condition/heart-disease
+     [java] url: http://www.health.com/health/dental-care
+     [java] Added new url to root: http://www.health.com/health/dental-care
+     [java] url: http://www.health.com/health/diabetes1
+     [java] url: http://www.health.com/health/diabetes2
+     [java] url: http://www.health.com/health/diet-fitness/
+     [java] url: http://www.health.com/health/fitness-finder
+     [java] url: http://www.health.com/health/gallery/0,,20306919,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20307105,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20307105,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20358907,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20358907,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20366277,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20366277,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20390232,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20390232,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20390441,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20390441,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20432121,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20432121,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20436269_11,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20440834,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20440834,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20442821,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20443643,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20443643,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20454528,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20477647,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20477647,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20487696,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20487696,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20513624,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20539037,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20544048,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20552165,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20552165,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20553780,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20553780,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20579759,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20579759,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20585485,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20585485,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20610016,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20610016,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20645166,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20664616,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20664616,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20680036,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20687551_10,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20687551_10,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20692801,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20692801,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20718479,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20807507,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20845429,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20845429,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20855303,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20855303,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20911507,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20911507,00.html
+     [java] url: http://www.health.com/health/gallery/0,,20956989,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/0,,20956989,00.html
+     [java] url: http://www.health.com/health/gallery/thumbnails/0,,20443643,00.html
+     [java] Added new url to root: http://www.health.com/health/gallery/thumbnails/0,,20443643,00.html
+     [java] url: http://www.health.com/health/gallery/thumbnails/0,,20539037,00.html
+     [java] url: http://www.health.com/health/heart-disease
+     [java] url: http://www.health.com/health/hiv
+     [java] url: http://www.health.com/health/lose-weight/
+     [java] url: http://www.health.com/health/package/section/0,,20636505,00.html
+     [java] Added new url to root: http://www.health.com/health/package/section/0,,20636505,00.html
+     [java] url: http://www.health.com/health/prostate-cancer
+     [java] url: http://www.health.com/health/recipe/0,,50400000118663,00.html
+     [java] Added new url to root: http://www.health.com/health/recipe/0,,50400000118663,00.html
+     [java] url: http://www.health.com/health/video/0,,20918897,00.html
+     [java] Added new url to root: http://www.health.com/health/video/0,,20918897,00.html
+     [java] Generating: Root-health.com.txt
+     [java] Writing to root sample.
+     [java] Generating: Health-health.com.txt
+     [java] Writing to health sample.
+     [java] health.com Root/Health/Fitness
+
+BUILD SUCCESSFUL
+Total time: 1 minute 21 seconds
