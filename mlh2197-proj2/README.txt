@@ -2,6 +2,9 @@
 Mengyu Wu: mw2907  Melanie Hsu: mlh2197 
 
 2) A list of all the files that you are submitting
+
+build.xml
+
 src:
 	Classification/WebDatabaseClassification.java
 	Classification/getWordsLynx.java
@@ -12,6 +15,12 @@ src:
 lib:
 	commons-codec-1.10.jar
 	json-20090211.jar
+
+queries: // this was provided in the assignment, but our program needs these to run, do not delete them!
+	computers.txt
+	health.txt
+	root.txt
+	sports.txt
 
 3) A clear description of how to run your program (note that your project must compile/run under Linux in your CS account)
 To Run:
@@ -31,7 +40,7 @@ To Run:
 	<t_es> is the specificity threshold (between 0 and 1)
 	<t_ec> is the coverage threshold
 	<host> is the URL of the database to be classified
-	ex. ant WebDatabaseClassification -Dargs='L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw 0.6 100 fifa.com'
+	ex. ant WebDatabaseClassification -Dargs='/mLh4HfGwQtBVL0PWS/leR063AuUs8mgM9hAKWYlB9Y 0.6 100 fifa.com'
 
 4) A clear description of the internal design of your project, for each part of the project
 Part I uses the following Java files:
@@ -95,7 +104,9 @@ probes for the current subcategory) are added to the parent category's TreeSet
 /sample. The samples set for any category will only accept new unique URLs, 
 hence duplicate URLs for a category will be ignored. Additionally, for each query q
 associated with the category C, the BingSearch class only queries Bing for the top 4 
-webpages for this query, where each query is a page in database D.
+webpages for this query, where each query is a page in database D. Our implementation
+screens out .pdfs and .ppts, web urls with this extension will not be included
+as the result of the probe.
 
 At the very end of the WebDatabaseClassification main method,
 the the content summary is generated for each non-leaf category that the 
@@ -116,18 +127,27 @@ under Root/Health, then the Root category .txt file for this site will include
 the results of both Root-level queries and Health-level queries, while the 
 Health category .txt file will include the Health-level queries. 
 
-Since the category hierarchy is fixed, and it's impossible to know which 
-categories the database will be classified as beforehand, several versions of the
-root sample set is created, such that rootSample contains only urls from the 
-Root-level queries and rootComputerSample, rootHealthSample, and rootSportsSample
-contain the urls for both Root-level queries and queries at the Computer, Health,
-and Sports levels respectively. After the database has been classified, the 
-appropriate root sample TreeSet is used to generate the content summary for the
-Root-siteName.txt file.
+After the database has been classified, the appropriate sample TreeSet is used to 
+generate the content summary for the Category-siteName.txt file. If the database
+is classified under health, sports, or computers, the corresponding sample TreeSet
+(containing the unique urls returned by the probes at this level's query) is used
+to create the content summary. Since the category hierarchy is fixed, and it's 
+impossible to know which categories the database will be classified as beforehand,
+the root sample set will need to be merged with the sub-category set if the 
+database is categorized under root/computers, root/health, or root/sports. Otherwise,
+if the database classification is only root, then the root sample TreeSet will not
+be merged with anything else, and will directly be used to generate the content
+summary.
 
 5) Your Bing account key (so we can test your project)
-pb71DGWbKoLI5Vki6bTSeAIM4otYkmdXMqSV+s/WvP0
-L5ZA7UJt279Hm0QcBPu50yHHWRS1ZNzlifvHTiK5onw (this one might have hit the quota)
+ /mLh4HfGwQtBVL0PWS/leR063AuUs8mgM9hAKWYlB9Y
 
 6) Any additional information that you consider significant 
 We restricted t_es to 0 < t_es < 1 because the ref implementation also specified this constraint
+
+The database's classification is the final line that is output by the program.
+Please wait a couple minutes for the summary to finish generating, as the classification 
+will not appear before then.
+
+Do not delete the files under the queries folder (computers.txt, health.txt, root.txt, sports.txt)
+or build.xml! Our program needs them to run.
