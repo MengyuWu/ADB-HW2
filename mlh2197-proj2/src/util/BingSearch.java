@@ -91,7 +91,7 @@ public class BingSearch {
 	    Query q=new Query(queryTermsStr,site);
 	    WebDatabaseClassification.queryCacheDoc.put(q,result); // cache query result
 	    WebDatabaseClassification.queryCacheCount.put(q,num); // how many results for this query
-	    System.out.println("QUERY: [" + query + "]");
+	    //System.out.println("QUERY: [" + query + "]");
 	    contentSummary(result, category); // this is static , need to pass in the category
 	    
 	    return num;

@@ -65,38 +65,38 @@ public class WebDatabaseClassification {
 
 	public static TreeSet<String> getSample(String category) {
 		if (category.equals("Root")) {
-			System.out.println("Writing to root sample.");
+			//System.out.println("Writing to root sample.");
 			return rootSample;
 		} else if (category.equals("Computers")) {
-			System.out.println("Writing to computers sample.");
+			//System.out.println("Writing to computers sample.");
 			return computerSample;
 		} else if (category.equals("Health")) {
-			System.out.println("Writing to health sample.");
+			//System.out.println("Writing to health sample.");
 			return healthSample;
 		} else if (category.equals("Sports")) {
-			System.out.println("Writing to sports sample.");
+			//System.out.println("Writing to sports sample.");
 			return sportsSample;
 		} else {
-			System.out.println("ERROR WRONG SAMPLE!");
+			//System.out.println("ERROR WRONG SAMPLE!");
 			return sample;
 		}
 	}
 
 	public static TreeMap<String,Long> getSummary(String category) {
 		if (category.equals("Root")) {
-			System.out.println("Writing to root summary.");
+			//System.out.println("Writing to root summary.");
 			return rootSummary;
 		} else if (category.equals("Computers")) {
-			System.out.println("Writing to computers summary.");
+			//System.out.println("Writing to computers summary.");
 			return computerSummary;
 		} else if (category.equals("Health")) {
-			System.out.println("Writing to health summary.");
+			//System.out.println("Writing to health summary.");
 			return healthSummary;
 		} else if (category.equals("Sports")) {
-			System.out.println("Writing to sports summary.");
+			//System.out.println("Writing to sports summary.");
 			return sportsSummary;
 		} else {
-			System.out.println("ERROR WRONG SUMMARY!");
+			//System.out.println("ERROR WRONG SUMMARY!");
 			return summary;
 		}
 	}
@@ -207,9 +207,9 @@ public class WebDatabaseClassification {
 	public static void generateSummary(String category) {
 		TreeSet<String> currentSet = getSample(category);
 		for (String url:currentSet) {
-			System.out.println("Current url: " + url);
+			//System.out.println("Current url: " + url);
 			TreeSet<String> set=(TreeSet) getWordsLynx.runLynx(url); // get the set of words in the doc
-			System.out.println("Word set: " + set);
+			//System.out.println("Word set: " + set);
 			TreeMap<String,Long> summary = getSummary(category);
 			for(String w:set){ // take a count of each word in the set
 		   		if(summary.containsKey(w)){
@@ -288,19 +288,19 @@ public class WebDatabaseClassification {
 		root.addSubCategory(sports);
 
 		String category=classify(root,site, tc,ts,1);
-		System.out.println("Health sample: " + healthSample);
-		System.out.println("Root sample: " + rootSample);
+		//System.out.println("Health sample: " + healthSample);
+		//System.out.println("Root sample: " + rootSample);
 		if (category.contains("Computers")) {
-			System.out.println("Merge root & computers");
+			//System.out.println("Merge root & computers");
 			mergeSet(computerSample);
 		} else if (category.contains("Health")) {
-			System.out.println("Merge root & health");
+			//System.out.println("Merge root & health");
 			mergeSet(healthSample);
 		} else if (category.contains("Sports")) {
-			System.out.println("Merge root and sports");
+			//System.out.println("Merge root and sports");
 			mergeSet(sportsSample);
 		}
-		System.out.println("New root sample: " + rootSample);
+		//System.out.println("New root sample: " + rootSample);
 		String[] categories = category.split("/");
 		for (int i = 0; i < categories.length; i++) {
 			String currentCategory = categories[i];
