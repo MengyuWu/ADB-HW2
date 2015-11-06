@@ -131,22 +131,22 @@ public class WebDatabaseClassification {
 			// have "AND" list and "AND NOT" list (to ignore docs that have been included in the previous query)
 			// look at http://vlaurie.com/computers2/Articles/bing_advanced_search.htm
 			long count=0;
-			String NOTList="";
+			//String NOTList="";
 			for(String query:queryList){
 				//Exclude the queries that have already been done, doesn't influence much
 				String andQuery=QueryHelper.queryAND(query);
 				//System.out.println("AND QUERY: " + andQuery);
-				String notQuery="("+QueryHelper.queryAND(NOTList)+")";
+				//String notQuery="("+QueryHelper.queryAND(NOTList)+")";
 				//System.out.println("NOT QUERY: " + notQuery);
 				String q=andQuery;
-				if(!NOTList.isEmpty()){
+				/*if(!NOTList.isEmpty()){
 					q=q+" AND NOT "+notQuery;
-				}
+				}*/
 		
 				//using a And b AND NOT(c) not very good
  				count+=getCount(query, site, mainCategory);
 				//System.out.println("query:"+ q +" count:"+count);
-				NOTList+=query+" ";	
+				//NOTList+=query+" ";	
 			}
 			String sub=c.getCategory();
 			total+=count;
