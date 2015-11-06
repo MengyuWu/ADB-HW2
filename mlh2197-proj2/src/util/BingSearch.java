@@ -49,6 +49,8 @@ public class BingSearch {
 		// %27(')
 		try {
 			//Query=%27site%3afifa.com%20premiership%27
+			System.out.println("QUERY: [" + query + "]");
+			System.out.println("SEND: " + bingUrl+"&Query=%27"+"site%3a"+site+"%20"+urlCoder.encode(query)+"%27");
 			url = new URL(bingUrl+"&Query=%27"+"site%3a"+site+"%20"+urlCoder.encode(query)+"%27");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -91,7 +93,6 @@ public class BingSearch {
 	    Query q=new Query(queryTermsStr,site);
 	    WebDatabaseClassification.queryCacheDoc.put(q,result); // cache query result
 	    WebDatabaseClassification.queryCacheCount.put(q,num); // how many results for this query
-	    //System.out.println("QUERY: [" + query + "]");
 	    contentSummary(result, category); // this is static , need to pass in the category
 	    
 	    return num;
